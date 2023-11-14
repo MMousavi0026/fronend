@@ -13,15 +13,15 @@ const SiteHeader = () => {
                     <div className={Styles.searchBox}>
                         <input className={Styles.input} type={"text"} placeholder={'دنبال چه محصولی هستید؟'}/>
                         <button className={Styles.searchIcon+" "+Styles.button}>
-                            <FontAwesomeIcon className={Styles.icon} icon={faMagnifyingGlass} />
+                            <FontAwesomeIcon className={Styles.icon} style={{border:"none"}} icon={faMagnifyingGlass} />
                         </button>
                     </div>
                     <div className={Styles.icons} style={{width:"59vm", display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-between"}}>
                         <a className={Styles.call}>
                             <FontAwesomeIcon className={Styles.icon+" "+Styles.callIcon} icon={faPhoneVolume} />
-                            <div style={{marginRight:"2vh", display:"flex", flexDirection:"column"}}>
-                                <span style={{fontSize:".9vw", color:"#e6e6e6"}}>شماره تماس</span>
-                                <span style={{fontSize:"1.4vw"}}>0922334455</span>
+                            <div className={Styles.phone} style={{marginRight:"8px", display:"flex", flexDirection:"column"}}>
+                                <span style={{fontSize:"10px", color:"#e6e6e6"}}>شماره تماس</span>
+                                <span style={{fontSize:"17px"}}>0922334455</span>
                             </div>
                         </a>
                         <a className={Styles.store}>
