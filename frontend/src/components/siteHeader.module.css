@@ -1,23 +1,25 @@
 .headerWrapper {
-    border: red solid;
 }
 
 .headerItemsWrapper {
-    width: 100vm;
+    width: 100%;
     height: 31vh;
     background-color: #122d40;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .headerItems {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 5vh;
+    margin-right: 5vh!important;
+    margin-left: 5vh;
     margin-bottom: 7vh !important;
-
 }
 
 .logo {
@@ -65,12 +67,65 @@ input:focus {
     cursor: pointer
 }
 
-button {
+.icon {
+    font-size: .4rem;
+}
+
+.call {
+    width: 25vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #122d40;
+    color: white;
+    border: none;
+    border-radius: 100vh;
+    cursor: pointer;
+}
+
+.call:hover .callIcon {
+    border-color: #01e281;
+    color: #01e281;
+}
+
+.callIcon {
+    padding: 12px;
+    border-radius: 100vh;
+    border: 1px #354c5d solid;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.phoneNumber {
+    font-size: smaller;
+    margin: -10px 0;
+}
+
+.phone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.button {
     width: 7vh;
     height: 7vh;
     background-color: #122d40;
     color: white;
     border-radius: 100vh;
-    border: none;
-    cursor: pointer
+    border: 1px #354c5d solid;
+    cursor: pointer;
+    margin: 0 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

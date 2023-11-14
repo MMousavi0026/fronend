@@ -12,22 +12,26 @@ const SiteHeader = (props) => {
                     <img className={Styles.logo} alt='logo' src={require('../assets/img/logo-sm.png')}/>
                     <div className={Styles.searchBox}>
                         <input className={Styles.input} type={"text"} placeholder={'دنبال چه محصولی هستید؟'}/>
-                        <button className={Styles.searchIcon}>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} />
+                        <button className={Styles.searchIcon+" "+Styles.button}>
+                            <FontAwesomeIcon className={Styles.icon} icon={faMagnifyingGlass} />
                         </button>
                     </div>
                     <div className={Styles.buttonsWrapper}>
-                        <button>
-                            <FontAwesomeIcon icon={faPhoneVolume} />
+                        <button className={Styles.call}>
+                            <FontAwesomeIcon className={Styles.icon+" "+Styles.callIcon} icon={faPhoneVolume} />
+                            <div className={Styles.phone}>
+                                <p className={Styles.phoneNumber}>شماره تماس</p>
+                                <p>0922334455</p>
+                            </div>
                         </button>
-                        <button>
-                            <FontAwesomeIcon icon={faBasketShopping} />
+                        <button className={Styles.button}>
+                            <FontAwesomeIcon className={Styles.icon} icon={faBasketShopping} />
                         </button>
-                        <button>
-                            <FontAwesomeIcon icon={faHeart} />
+                        <button className={Styles.button}>
+                            <FontAwesomeIcon className={Styles.icon} icon={faHeart} />
                         </button>
-                        <button>
-                            <FontAwesomeIcon icon={faUser} />
+                        <button className={Styles.button}>
+                            <FontAwesomeIcon className={Styles.icon} icon={faUser} />
                         </button>
                     </div>
                 </div>
