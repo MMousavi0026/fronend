@@ -2,37 +2,35 @@
 }
 
 .header1 {
-    width: 100%;
-    height: 31vh;
     background-color: #122d40;
+    height: 31vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
 
-.headerItems {
+.header11 {
     width: 100%;
+    height: 23vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-right: 5vh!important;
-    margin-left: 5vh;
-    margin-bottom: 7vh !important;
+    justify-content: space-between;
+    margin-bottom: 25vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
 }
 
 .logo {
-    width: auto;
-    height: 11vh;
+    width: 25vw;
+    height: auto;
 }
 
 .searchBox {
-    margin-right: 8vh;
+    margin-right: 8vm;
     position: relative;
     border: none;
-    height: 7.5vh ;
-    width: 65vh ;
+    height: 7.5vm ;
+    width: 55vm ;
     display: flex;
     align-items: center;
 }
@@ -41,7 +39,7 @@
     border: #354c5d solid;
     border-radius: 90vh ;
     height: 7.5vh ;
-    width: 65vh ;
+    width: 25vw ;
     color: white;
     background-color: #354c5d;
     opacity: 1 ;
@@ -70,19 +68,36 @@ input:focus {
 .icon {
     font-size: .4rem;
     color: white;
-}
-
-.call {
-    width: 25vh;
+    padding:12px;
+    border-radius: 100vh;
+    border: 1px #354c5d solid;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #122d40;
+    cursor: pointer;
+}
+
+.call {
+    width: 25vm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     color: white;
     border: none;
     border-radius: 100vh;
     cursor: pointer;
+    margin-left: 5vh;
+}
+
+.store {
+    margin-left: 2vh;
+}
+
+.love {
+    margin-left: 2vh;
 }
 
 .call:hover .callIcon {
@@ -129,4 +144,11 @@ input:focus {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .searchBox {
+        display: none;
+    }
+
 }

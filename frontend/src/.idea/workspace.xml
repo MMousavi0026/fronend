@@ -10,6 +10,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
     <option name="INCOMING_CHECK_STRATEGY" value="Never" />
@@ -49,7 +56,7 @@
       <workItem from="1699769903260" duration="5391000" />
       <workItem from="1699801715061" duration="592000" />
       <workItem from="1699964285742" duration="2580000" />
-      <workItem from="1699983253538" duration="856000" />
+      <workItem from="1699983253538" duration="7868000" />
     </task>
     <servers />
   </component>
