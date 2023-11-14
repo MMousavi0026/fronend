@@ -1,7 +1,7 @@
 .headerWrapper {
 }
 
-.headerItemsWrapper {
+.header1 {
     width: 100%;
     height: 31vh;
     background-color: #122d40;
@@ -57,7 +57,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: .8vh;
+    left: -1vh;
     width: 7vh;
     height: 7vh;
     background-color: #122d40;
@@ -69,6 +69,7 @@ input:focus {
 
 .icon {
     font-size: .4rem;
+    color: white;
 }
 
 .call {

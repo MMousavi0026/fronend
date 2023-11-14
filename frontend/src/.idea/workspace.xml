@@ -11,7 +11,12 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
+    <option name="INCOMING_CHECK_STRATEGY" value="Never" />
+    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,6 +48,8 @@
       <workItem from="1699716016979" duration="466000" />
       <workItem from="1699769903260" duration="5391000" />
       <workItem from="1699801715061" duration="592000" />
+      <workItem from="1699964285742" duration="2580000" />
+      <workItem from="1699983253538" duration="856000" />
     </task>
     <servers />
   </component>
