@@ -1,8 +1,16 @@
 import "../styles/font.css";
 import React from 'react';
 import Styles from './siteHeader.module.css'
+import { Dropdown } from 'react-bootstrap';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBasketShopping, faHeart, faMagnifyingGlass, faPhoneVolume, faUser} from '@fortawesome/free-solid-svg-icons';
+import {
+    faBasketShopping,
+    faGift,
+    faHeart,
+    faMagnifyingGlass,
+    faPhoneVolume,
+    faUser
+} from '@fortawesome/free-solid-svg-icons';
 
 const SiteHeader = () => {
     return (
@@ -38,6 +46,24 @@ const SiteHeader = () => {
 
             </div>
             <div className={Styles.navMenu}>
+                <div className={Styles.navbar}>
+                    <Dropdown>
+                        <Dropdown.Toggle variant="secondary" id="dropdown-nav">
+                            منوی کرکره‌ای
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#home">خانه</Dropdown.Item>
+                            <Dropdown.Item href="#about">درباره ما</Dropdown.Item>
+                            <Dropdown.Item href="#contact">تماس با ما</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </div>
+                <div>
+                    <a className={Styles.dayOff}>
+                        <FontAwesomeIcon style={{color:"white", fontSize:"18px", marginLeft:"10px"}} icon={faGift} />
+                        <span style={{fontSize:"18px", color:"#white"}}>تخفیفات روزانه</span>
+                    </a>
+                </div>
 
             </div>
         </div>
