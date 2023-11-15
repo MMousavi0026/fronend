@@ -90,11 +90,7 @@ input:focus {
     margin-left: 12px;
 }
 
-.store {
-    margin-left: 1vw;
-}
-
-.love {
+.store, .love {
     margin-left: 1vw;
 }
 
