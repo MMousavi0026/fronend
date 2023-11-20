@@ -142,22 +142,38 @@ input:focus {
 .navMenu {
     position: absolute;
     background-color: #122d40;
-    width: 85%;
+    width: 95%;
+    height: 13vh;
     border: red solid;
     border-radius: 100vw;
-    margin-top: 26vh;
+    margin-top: 23vh;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .dayOff {
     background-color: #4e71fe;
-    border-radius: 1vh;
+    border-radius: 100vw;
     padding: 0 50px;
-    height: 70px;
+    height: 11vh;
     color: white;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-left: 12px;
+    width: 100%;
+}
+
+.menuItems {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
