@@ -141,35 +141,60 @@ input:focus {
 
 .navMenu {
     position: absolute;
-    background-color: #122d40;
+    background-color: #1c3e56;
     width: 95%;
     height: 13vh;
     border: red solid;
     border-radius: 100vw;
     margin-top: 23vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 .dayOff {
-    background-color: #4e71fe;
+    background-color: #01e281;
     border-radius: 100vw;
     padding: 0 50px;
     height: 11vh;
-    color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     margin-left: 12px;
-    width: 100%;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.dayOff:hover {
+    background-color: #122d40;
+    color: #01e281!important;
+}
+
+.off {
+    transition: color 0.4s;
+}
+
+.dayOff:hover .off{
+    color: #01e281!important;
+
 }
 
 .menuItems {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.menuItem {
+    transition: color 0.4s;
+}
+
+.menuItems:hover .menuItem{
+    color: #01e281 !important;
 }
 
 .navbar {

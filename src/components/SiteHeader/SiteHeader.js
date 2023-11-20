@@ -1,5 +1,5 @@
-import "../../styles/font.css";
 import React from 'react';
+import "../../styles/font.css";
 import Styles from './siteHeader.module.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
@@ -10,7 +10,6 @@ import {
     faPhoneVolume,
     faUser
 } from '@fortawesome/free-solid-svg-icons';
-import DropdownMenu from "../DropdownMenu/DropdownMenu";
 
 const SiteHeader = () => {
     return (
@@ -48,30 +47,30 @@ const SiteHeader = () => {
             <div className={Styles.navMenu}>
                 <div className={Styles.navbar}>
                     <a className={Styles.menuItems}>
-                        <FontAwesomeIcon style={{color:"white", fontSize:"21px", marginLeft:"10px"}} icon={faBasketShopping} />
-                        <span style={{fontSize:"21px", color:"white"}}>محصولات جدید</span>
+                        <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"10px"}} icon={faBasketShopping} />
+                        <span className={Styles.menuItem} style={{fontSize:"21px", color:"white"}}>محصولات جدید</span>
                     </a>
                     <a className={Styles.menuItems}>
-                       <span style={{fontSize:"21px", color:"white"}}>پرفروش ترین ها</span>
+                       <span className={Styles.menuItem} style={{fontSize:"21px", color:"white"}}>پرفروش ترین ها</span>
                     </a>
                     <a className={Styles.menuItems}>
-                        <FontAwesomeIcon style={{color:"white", fontSize:"21px", marginLeft:"10px"}} icon={faBasketShopping} />
-                        <span style={{fontSize:"21px", color:"white"}}>تخفیفات ویژه</span>
+                        <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"10px"}} icon={faBasketShopping} />
+                        <span className={Styles.menuItem} style={{fontSize:"21px", color:"white"}}>تخفیفات ویژه</span>
                     </a>
                     <a className={Styles.menuItems}>
-                        <span style={{fontSize:"21px", color:"white"}}>دسترسی سریع</span>
+                        <span className={Styles.menuItem} style={{fontSize:"21px", color:"white"}}>دسترسی سریع</span>
                     </a>
                     <a className={Styles.menuItems}>
-                        <span style={{fontSize:"21px", color:"white"}}>اخبار</span>
+                        <span className={Styles.menuItem} style={{fontSize:"21px", color:"white"}}>اخبار</span>
                     </a>
                     <a className={Styles.menuItems}>
-                        <span style={{fontSize:"21px", color:"white"}}>تماس با ما</span>
+                        <span className={Styles.menuItem} style={{fontSize:"21px", color:"white"}}>تماس با ما</span>
                     </a>
                 </div>
                 <div>
                     <a className={Styles.dayOff}>
-                        <FontAwesomeIcon style={{fontSize:"18px", marginLeft:"10px"}} icon={faGift} />
-                        <span style={{fontSize:"18px"}}>تخفیفات روزانه</span>
+                        <FontAwesomeIcon className={Styles.off} style={{fontSize:"15px", marginLeft:"10px", color:'#122d40'}} icon={faGift} />
+                        <span className={Styles.off} style={{fontSize:"15px", color:'#122d40'}}>تخفیفات روزانه</span>
                     </a>
                 </div>
             </div>
