@@ -65,10 +65,30 @@ const SiteHeader = () => {
                                     <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
                                 </a>
                                 <div className={Styles.offItems}>
-                                    <div className={Styles.offItem}>
-                                        <img className={Styles.fish} alt='logo' src={require('../../assets/img/fish.png')}/>
-                                        <span style={{padding:'40px'}}>ماهی<br/> و آبزیان</span>
-                                        <span>۲۰٪ تخفیف</span>
+                                    <div className={Styles.offItem} style={{textAlign: 'center'}}>
+                                        <img className={Styles.fish} alt='fish' src={require('../../assets/img/fish.png')}/>
+                                        <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>ماهی<br/> و آبزیان</span>
+                                        <span style={{fontSize:'14px', color:'#01e281'}}>۲۰٪ تخفیف</span>
+                                    </div>
+                                    <div className={Styles.offItem} style={{textAlign: 'center'}}>
+                                        <img className={Styles.fish} alt='fish' src={require('../../assets/img/fish.png')}/>
+                                        <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>میوه و<br/>سبزیجات</span>
+                                        <span style={{fontSize:'14px', color:'#01e281'}}>۴۰٪ تخفیف</span>
+                                    </div>
+                                    <div className={Styles.offItem} style={{textAlign: 'center'}}>
+                                        <img className={Styles.fish} alt='fish' src={require('../../assets/img/fish.png')}/>
+                                        <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>نان و<br/>غلات</span>
+                                        <span style={{fontSize:'14px', color:'#01e281'}}>۱۵٪ تخفیف</span>
+                                    </div>
+                                    <div className={Styles.offItem} style={{textAlign: 'center'}}>
+                                        <img className={Styles.fish} alt='fish' src={require('../../assets/img/fish.png')}/>
+                                        <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>لبنیات و<br/>پروتئین</span>
+                                        <span style={{fontSize:'14px', color:'#01e281'}}>۵۰٪ تخفیف</span>
+                                    </div>
+                                    <div className={Styles.offItem} style={{textAlign: 'center'}}>
+                                        <img className={Styles.fish} alt='fish' src={require('../../assets/img/fish.png')}/>
+                                        <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>گوشت<br/>و مرغ</span>
+                                        <span style={{fontSize:'14px', color:'#01e281'}}>۴۵٪ تخفیف</span>
                                     </div>
                                 </div>
                             </li>

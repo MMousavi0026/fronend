@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .header1 {
@@ -144,7 +145,6 @@ input:focus {
     justify-content: center;
     width: 95%;
     height: 70vh;
-    border: red solid;
     margin-top: -45px;
 }
 
@@ -157,6 +157,7 @@ input:focus {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .dayOff {
@@ -215,25 +216,32 @@ li{
     list-style-type: none;
 }
 
+ul li div {
+    display: none;
+}
+
 .offItems {
+    width: 97%;
+    height: 54vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #122d40;
-    border-radius: 13px;
+    border-radius: 10px;
     position: absolute;
+    left: 1.5%;
 }
 
 .offItem {
     border: #01e281 solid 1px;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 45px
+    padding: 40px 60px;
 }
 
 .fish {
-    width: 7vw;
-    /*margin: 50px;*/
+    width: 5.5vw;
 }
