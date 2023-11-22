@@ -8,7 +8,7 @@
 .header1 {
     width: 100%;
     background-color: #122d40;
-    height: 31vh;
+    height: 185px;
     display: flex;
     justify-content: center;
 }
@@ -20,7 +20,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 25vh;
+    margin-top: 0px;
     margin-right: 3vw;
     margin-left: 3vw;
 }
@@ -32,23 +32,23 @@
 }
 
 .searchBox {
-    position: relative;
     border: none;
     height: 7.5vw ;
-    width: 270px ;
+    width: 280px ;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .input {
     border: #354c5d solid;
     border-radius: 90vh ;
-    height: 7.5vh ;
-    width: 185px ;
+    height: 40px ;
+    width: 250px ;
     color: white;
     background-color: #354c5d;
     opacity: 1 ;
-    padding: 0 31px;
+    padding-left: 30px;
 }
 
 input:focus {
@@ -60,7 +60,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 33px;
+    left: 18px;
     background-color: #122d40;
     color: white;
     border-radius: 100vh;
@@ -128,6 +128,10 @@ input:focus {
     .header1 {
         height: 25vh;
     }
+
+    .navMenuWrapper {
+        display: none!important;
+    }
 }
 
 @media (max-width: 425px) {
@@ -150,12 +154,11 @@ input:focus {
 
 .navMenu {
     background-color: #1c3e56;
-    width: 95%;
-    height: 13vh;
+    width: 100%;
+    height: 80px;
     border-radius: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     position: relative;
 }
@@ -164,13 +167,12 @@ input:focus {
     background-color: #01e281;
     border-radius: 100vw;
     padding: 0 50px;
-    height: 11vh;
+    height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-left: 12px;
     transition: background-color 0.4s, color 0.4s;
 }
 
@@ -200,6 +202,11 @@ input:focus {
     transition: color 0.4s;
 }
 
+.navbarWrapper {
+    position: absolute;
+    right: 0;
+}
+
 .menuItems:hover .menuItem{
     color: #01e281 !important;
 }
@@ -210,18 +217,23 @@ input:focus {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    box-sizing: border-box;
 }
 
 li{
     list-style-type: none;
 }
 
-ul li div {
-    display: none;
+nav ul li div {
+    display: none!important;
+}
+
+nav ul li:hover div {
+    display: flex!important;
 }
 
 .offItems {
-    width: 97%;
+    width: 130%;
     height: 54vh;
     display: flex;
     flex-direction: row;
@@ -230,7 +242,8 @@ ul li div {
     background-color: #122d40;
     border-radius: 10px;
     position: absolute;
-    left: 1.5%;
+    z-index: 1;
+    right: 6%;
 }
 
 .offItem {
@@ -244,4 +257,9 @@ ul li div {
 
 .fish {
     width: 5.5vw;
+}
+
+.dayOffWrapper {
+    position: absolute;
+    left: 12px;
 }
