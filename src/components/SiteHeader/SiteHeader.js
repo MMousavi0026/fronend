@@ -1,17 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../../styles/font.css";
 import Styles from './siteHeader.module.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
+    faBars,
     faBasketShopping, faCaretDown,
     faGift,
     faHeart,
     faMagnifyingGlass,
     faPhoneVolume,
-    faUser
+    faUser, faXmark
 } from '@fortawesome/free-solid-svg-icons';
 
 const SiteHeader = () => {
+
+    const [isShownMenubar, setShowMenubar] = useState(false);
+
     return (
         <div className={Styles.headerWrapper}>
             <div className={Styles.header1}>
@@ -40,6 +44,59 @@ const SiteHeader = () => {
                         <a className={Styles.profile}>
                             <FontAwesomeIcon className={Styles.icon} icon={faUser} />
                         </a>
+                        <div className={Styles.barsWrapper}>
+                            <a className={Styles.bars} onClick={()=> setShowMenubar(true)}>
+                                <FontAwesomeIcon className={Styles.icon} icon={faBars} />
+                            </a>
+                            <div className={Styles.menubarsWrapper}>
+                                <a className={Styles.xmark} onClick={()=> setShowMenubar(false)}>
+                                    <FontAwesomeIcon icon={faXmark} />
+                                </a>
+                                <div className={Styles.menubarWrapper} style={{marginTop:'-25px'}}>
+                                    <div className={Styles.ulWrapper}>
+                                        <ul className={Styles.menubar}>
+                                            <li className={Styles.menuLi}>
+                                                <a className={Styles.menuItems}>
+                                                    <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
+                                                    <span className={Styles.menuItem} style={{fontSize:"1.7vw", color:"white"}}>محصولات جدید</span>
+                                                </a>
+                                            </li>
+                                            <li className={Styles.menuLi}>
+                                                <a className={Styles.menuItems}>
+                                                    <span className={Styles.menuItem} style={{fontSize:"1.7vw", color:"white"}}>پرفروش ترین ها</span>
+                                                </a>
+                                            </li>
+                                            <li className={Styles.menuLi}>
+                                                <a className={Styles.menuItems}>
+                                                    <FontAwesomeIcon className={Styles.navItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
+                                                    <span className={Styles.menuItem} style={{fontSize:"1.7vw", color:"white"}}>تخفیفات ویژه</span>
+                                                    <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
+                                                </a>
+                                            </li>
+                                            <li className={Styles.menuLi}>
+                                                <a className={Styles.menuItems}>
+                                                    <span className={Styles.menuItem} style={{fontSize:"1.7vw", color:"white"}}>دسترسی سریع</span>
+                                                    <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
+                                                </a>
+                                            </li>
+                                            <li className={Styles.menuLi}>
+                                                <a className={Styles.menuItems}>
+                                                    <span className={Styles.menuItem} style={{fontSize:"1.7vw", color:"white"}}>اخبار</span>
+                                                </a>
+                                            </li>
+                                            <li className={Styles.menuLi}>
+                                                <a className={Styles.menuItems}>
+                                                    <span className={Styles.menuItem} style={{fontSize:"1.7vw", color:"white"}}>تماس با ما</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img className={Styles.icon} style={{position:"absolute", width:"5px!important"}} alt='logo' src={require('../../assets/img/eitaa-icon-white.png')} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,21 +105,21 @@ const SiteHeader = () => {
                     <div className={Styles.navbarWrapper}>
                         <ul className={Styles.navbar}>
                             <li>
-                                <a className={Styles.menuItems}>
-                                    <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
-                                    <span className={Styles.menuItem} style={{fontSize:"1.5vw", color:"white"}}>محصولات جدید</span>
+                                <a className={Styles.navItems}>
+                                    <FontAwesomeIcon className={Styles.navItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
+                                    <span className={Styles.navItem} style={{fontSize:"1.5vw", color:"white"}}>محصولات جدید</span>
                                 </a>
                             </li>
                             <li>
-                                <a className={Styles.menuItems}>
-                                    <span className={Styles.menuItem} style={{fontSize:"1.5vw", color:"white"}}>پرفروش ترین ها</span>
+                                <a className={Styles.navItems}>
+                                    <span className={Styles.navItem} style={{fontSize:"1.5vw", color:"white"}}>پرفروش ترین ها</span>
                                 </a>
                             </li>
                             <li>
-                                <a className={Styles.menuItems}>
-                                    <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
-                                    <span className={Styles.menuItem} style={{fontSize:"1.5vw", color:"white"}}>تخفیفات ویژه</span>
-                                    <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
+                                <a className={Styles.navItems}>
+                                    <FontAwesomeIcon className={Styles.navItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
+                                    <span className={Styles.navItem} style={{fontSize:"1.5vw", color:"white"}}>تخفیفات ویژه</span>
+                                    <FontAwesomeIcon className={Styles.navItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
                                 </a>
                                 <div className={Styles.offItems}>
                                     <div className={Styles.offItem} style={{textAlign: 'center'}}>
@@ -93,19 +150,19 @@ const SiteHeader = () => {
                                 </div>
                             </li>
                             <li>
-                                <a className={Styles.menuItems}>
-                                    <span className={Styles.menuItem} style={{fontSize:"1.5vw", color:"white"}}>دسترسی سریع</span>
-                                    <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
+                                <a className={Styles.navItems}>
+                                    <span className={Styles.navItem} style={{fontSize:"1.5vw", color:"white"}}>دسترسی سریع</span>
+                                    <FontAwesomeIcon className={Styles.navItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
                                 </a>
                             </li>
                             <li>
-                                <a className={Styles.menuItems}>
-                                    <span className={Styles.menuItem} style={{fontSize:"1.5vw", color:"white"}}>اخبار</span>
+                                <a className={Styles.navItems}>
+                                    <span className={Styles.navItem} style={{fontSize:"1.5vw", color:"white"}}>اخبار</span>
                                 </a>
                             </li>
                             <li>
-                                <a className={Styles.menuItems}>
-                                    <span className={Styles.menuItem} style={{fontSize:"1.5vw", color:"white"}}>تماس با ما</span>
+                                <a className={Styles.navItems}>
+                                    <span className={Styles.navItem} style={{fontSize:"1.5vw", color:"white"}}>تماس با ما</span>
                                 </a>
                             </li>
                         </ul>

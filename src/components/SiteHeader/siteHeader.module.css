@@ -95,7 +95,7 @@ input:focus {
     margin-left: 12px;
 }
 
-.store, .love {
+.store, .love, .profile {
     margin-left: 1vw;
 }
 
@@ -108,6 +108,14 @@ input:focus {
     border-radius: 100vh;
     border: 1px #354c5d solid;
     transition: border-color 0.3s, color 0.3s;
+}
+
+.bars:active + .barsWrapper {
+    display: flex;
+}
+
+.barsWrapper {
+    display: none;
 }
 
 .button {
@@ -131,6 +139,10 @@ input:focus {
 
     .navMenuWrapper {
         display: none!important;
+    }
+
+    .barsWrapper {
+        display: flex;
     }
 }
 
@@ -190,7 +202,7 @@ input:focus {
 
 }
 
-.menuItems {
+.navItems {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -198,7 +210,7 @@ input:focus {
     text-decoration: none;
 }
 
-.menuItem {
+.navItem {
     transition: color 0.4s;
 }
 
@@ -207,7 +219,7 @@ input:focus {
     right: 0;
 }
 
-.menuItems:hover .menuItem{
+.navItems:hover .navItem{
     color: #01e281 !important;
 }
 
@@ -262,4 +274,64 @@ nav ul li:hover div {
 .dayOffWrapper {
     position: absolute;
     left: 12px;
+}
+
+.menubarsWrapper {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menubarWrapper {
+    background-color: #122d40;
+}
+
+.ulWrapper {
+    height: 100%;
+}
+
+.menuLi {
+    width: 400px;
+    margin-right: -20px;
+}
+
+.menubar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    background-size: cover;
+    width: 400px;
+    height: 60%;
+}
+
+.menuItems {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    width: 100%;
+    top: 0;
+}
+
+.menuItem {
+    transition: color 0.4s;
+}
+
+.menuItems:hover .menuItem{
+    color: #01e281 !important;
+}
+
+.xmark {
+    font-size: 25px;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
 }
