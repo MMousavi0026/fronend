@@ -287,11 +287,29 @@ nav ul li:hover div {
 }
 
 .menubarWrapper {
-    background-color: #122d40;
+    background-color: #1c3e56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ulWrapper {
-    height: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.socialMediaIcon {
+    width: 30px;
+    background-color: #122d40;
+    font-size: 17px;
+    color: white;
+    padding:10px;
+    border-radius: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .menuLi {
@@ -306,7 +324,7 @@ nav ul li:hover div {
     justify-content: space-around;
     background-size: cover;
     width: 400px;
-    height: 60%;
+    height: 100%;
 }
 
 .menuItems {

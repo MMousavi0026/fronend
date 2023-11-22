@@ -91,8 +91,9 @@ const SiteHeader = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div>
-                                        <img className={Styles.icon} style={{position:"absolute", width:"5px!important"}} alt='logo' src={require('../../assets/img/eitaa-icon-white.png')} />
+                                    <div style={{display:"flex", flexDirection:"row", justifyContent:"space-around" ,marginTop:"80px", width: "150px"}}>
+                                        <img className={Styles.socialMediaIcon} alt='logo' src={require('../../assets/img/eitaa-icon-white2.png')} />
+                                        <img className={Styles.socialMediaIcon} alt='logo' src={require('../../assets/img/instagram.png')} />
                                     </div>
                                 </div>
                             </div>
