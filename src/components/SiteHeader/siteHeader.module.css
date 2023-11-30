@@ -388,3 +388,28 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+.quickAccess {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 47vh;
+    background-color: #122d40;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.quickAccessColumn {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    margin: 20px 40px;
+}
+
+.quickAccessItem {
+
+}
