@@ -77,12 +77,12 @@ const SiteHeader = () => {
                                                     <div className={Styles.offItemsA}>
                                                         <div className={Styles.offItem} style={{textAlign: 'center'}}>
                                                             <img className={Styles.fish} alt='fish' src={require('../../assets/img/s1.png')}/>
-                                                            <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>ماهی<br/> و آبزیان</span>
+                                                            <span style={{fontSize:'3vw', padding:'17px 0', color:'white'}}>ماهی<br/> و آبزیان</span>
                                                             <span style={{fontSize:'14px', color:'#01e281'}}>۲۰٪ تخفیف</span>
                                                         </div>
                                                         <div className={Styles.offItem} style={{textAlign: 'center'}}>
                                                             <img className={Styles.fish} alt='fish' src={require('../../assets/img/s2.png')}/>
-                                                            <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>میوه و<br/>سبزیجات</span>
+                                                            <span style={{fontSize:'3vw', padding:'17px 0', color:'white'}}>میوه و<br/>سبزیجات</span>
                                                             <span style={{fontSize:'14px', color:'#01e281'}}>۴۰٪ تخفیف</span>
                                                         </div>
                                                     </div>
@@ -179,92 +179,92 @@ const SiteHeader = () => {
                                     <span className={Styles.navItem} style={{fontSize:"1.5vw", color:"white"}}>دسترسی سریع</span>
                                     <FontAwesomeIcon className={Styles.navItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
                                 </a>
-                                <div className={Styles.quickAccess}>
-                                    <div className={Styles.quickAccessColumn}>
-                                        <div className={Styles.quickAccessItem}>
-                                            <span style={{fontSize:'20px', color:'#01e281', paddingBottom:'10px'}}>دسته بندی</span>
+                                <div className={Styles.quickAccess} style={{paddingBottom:'10px', paddingTop:'10px'}}>
+                                    <div className={Styles.quickAccessColumn} style={{borderLeft:'1px solid gray'}}>
+                                        <div>
+                                            <span style={{fontSize:'1.5vw', color:'#01e281', paddingBottom:'10px'}}>دسته بندی</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faFolder} />
-                                            <span style={{fontSize:'16px', color:'white'}}>سوپر مارکت</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>سوپر مارکت</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faFolder} />
-                                            <span style={{fontSize:'16px', color:'white'}}>مرغ و ماهی</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>مرغ و ماهی</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faTag} />
-                                            <span style={{fontSize:'16px', color:'white'}}>سبزیجات</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>سبزیجات</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faFolder} />
-                                            <span style={{fontSize:'16px', color:'white'}}>لبنیات</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>لبنیات</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faFolder} />
-                                            <span style={{fontSize:'16px', color:'white'}}>نظافت و شستشو</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>نظافت و شستشو</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faFolder} />
-                                            <span style={{fontSize:'16px', color:'white'}}>پر فروش ترین ها</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>پر فروش ترین ها</span>
+                                        </div>
+                                    </div>
+                                    <div className={Styles.quickAccessColumn} style={{borderLeft:'1px solid gray'}}>
+                                        <div>
+                                            <span style={{fontSize:'1.5vw', color:'#01e281', paddingBottom:'10px'}}>دسته بندی</span>
+                                        </div>
+                                        <div className={Styles.quickAccessItem}>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>سوپر مارکت</span>
+                                        </div>
+                                        <div className={Styles.quickAccessItem}>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>مرغ و ماهی</span>
+                                        </div>
+                                        <div className={Styles.quickAccessItem}>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>سبزیجات</span>
+                                        </div>
+                                        <div className={Styles.quickAccessItem}>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>لبنیات</span>
+                                        </div>
+                                        <div className={Styles.quickAccessItem}>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>نظافت و شستشو</span>
+                                        </div>
+                                        <div className={Styles.quickAccessItem}>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>پر فروش ترین ها</span>
                                         </div>
                                     </div>
                                     <div className={Styles.quickAccessColumn}>
-                                        <div className={Styles.quickAccessItem}>
-                                            <span style={{fontSize:'20px', color:'#01e281', paddingBottom:'10px'}}>دسته بندی</span>
+                                        <div>
+                                            <span style={{fontSize:'1.5vw', color:'#01e281', paddingBottom:'10px'}}>دسته بندی</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faTag} />
-                                            <span style={{fontSize:'16px', color:'white'}}>سوپر مارکت</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>سوپر مارکت</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faTag} />
-                                            <span style={{fontSize:'16px', color:'white'}}>مرغ و ماهی</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>مرغ و ماهی</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faTag} />
-                                            <span style={{fontSize:'16px', color:'white'}}>سبزیجات</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>سبزیجات</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faTag} />
-                                            <span style={{fontSize:'16px', color:'white'}}>لبنیات</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>لبنیات</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faTag} />
-                                            <span style={{fontSize:'16px', color:'white'}}>نظافت و شستشو</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>نظافت و شستشو</span>
                                         </div>
                                         <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faTag} />
-                                            <span style={{fontSize:'16px', color:'white'}}>پر فروش ترین ها</span>
-                                        </div>
-                                    </div>
-                                    <div className={Styles.quickAccessColumn}>
-                                        <div className={Styles.quickAccessItem}>
-                                            <span style={{fontSize:'20px', color:'#01e281', paddingBottom:'10px'}}>دسته بندی</span>
-                                        </div>
-                                        <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faLink} />
-                                            <span style={{fontSize:'16px', color:'white'}}>سوپر مارکت</span>
-                                        </div>
-                                        <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faLink} />
-                                            <span style={{fontSize:'16px', color:'white'}}>مرغ و ماهی</span>
-                                        </div>
-                                        <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faLink} />
-                                            <span style={{fontSize:'16px', color:'white'}}>سبزیجات</span>
-                                        </div>
-                                        <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faLink} />
-                                            <span style={{fontSize:'16px', color:'white'}}>لبنیات</span>
-                                        </div>
-                                        <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faLink} />
-                                            <span style={{fontSize:'16px', color:'white'}}>نظافت و شستشو</span>
-                                        </div>
-                                        <div className={Styles.quickAccessItem}>
-                                            <FontAwesomeIcon style={{fontSize:'18px', color:'white', marginLeft:'7px'}} icon={faLink} />
-                                            <span style={{fontSize:'16px', color:'white'}}>پر فروش ترین ها</span>
+                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                            <span style={{fontSize:'1.2vw', color:'white'}}>پر فروش ترین ها</span>
                                         </div>
                                     </div>
                                 </div>

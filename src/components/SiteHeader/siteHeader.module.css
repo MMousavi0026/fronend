@@ -260,8 +260,8 @@ div ul li:hover div {
 }
 
 .offItems {
-    width: 130%;
-    height: 54vh;
+    width: 83vw;
+    height: 56vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -274,12 +274,19 @@ div ul li:hover div {
 }
 
 .offItem {
-    border: #01e281 solid 1px;
+    width: 14vw;
+    border: gray solid 1px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 60px;
+    padding: 8.3vh 0;
+    transition: border-color .5s;
+    cursor: pointer;
+}
+
+.offItem:hover {
+    border-color: #01e281;
 }
 
 .fish {
@@ -393,9 +400,9 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 75%;
-    height: 47vh;
+    justify-content: space-between;
+    width: 49vw;
+    height: 49vh;
     background-color: #122d40;
     border-radius: 10px;
     position: absolute;
@@ -407,9 +414,18 @@ a {
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-    margin: 20px 40px;
+    padding: 0 2vw;
 }
 
 .quickAccessItem {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
 
+.quickAccessItem span {
+    transition: color .5s;
+}
+.quickAccessItem span:hover {
+    color: #01e281!important;
 }
