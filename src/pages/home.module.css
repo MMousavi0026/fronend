@@ -1,0 +1,71 @@
+.container {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.box1 {
+    width: 100%;
+    height: fit-content;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button1 {
+    width: 190px;
+    background-color: #122d40;
+    border-radius: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.button2 {
+    width: 190px;
+    border: #122d40 solid 2px;
+    border-radius: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s, border 0.4s;
+}
+
+.button1:hover {
+    background-color: #01e281;
+}
+
+.button2:hover {
+    background-color: #01e281;
+    border: #01e281 solid 2px;
+}
+
+.buttonText {
+    transition: color 0.4s;
+}
+
+.button1:hover .buttonText {
+    color: #122d40 !important;
+}
+
+.floatBox {
+    border: red solid 1px;
+    background-color: white;
+    box-shadow: black ;
+    width: 50vw;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
