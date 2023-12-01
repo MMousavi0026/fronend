@@ -404,6 +404,7 @@ div ul li:hover ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .offItemsA {
@@ -448,7 +449,7 @@ a {
 .quickAccessItem span {
     transition: color .5s;
 }
-.quickAccessItem span:hover {
+.quickAccessItem:hover span{
     color: #01e281!important;
 }
 
@@ -472,4 +473,5 @@ a {
     align-items: start;
     justify-content: space-around;
     padding: 0 2vw;
+    z-index: 1;
 }
