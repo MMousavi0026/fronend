@@ -39,7 +39,7 @@ const SiteHeader = () => {
                         <a className={Styles.store}>
                             <FontAwesomeIcon className={Styles.icon} icon={faBasketShopping} />
                         </a>
-                        <a className={Styles.love}>
+                           <a className={Styles.love}>
                             <FontAwesomeIcon className={Styles.icon} icon={faHeart} />
                         </a>
                         <a className={Styles.profile}>
@@ -49,78 +49,181 @@ const SiteHeader = () => {
                             <a className={Styles.bars} onClick={()=> setShowMenubar(true)}>
                                 <FontAwesomeIcon className={Styles.icon} icon={faBars} />
                             </a>
-                            {isShownMenubar ?
-                                <div className={Styles.menubarsWrapper}>
-                                    <a className={Styles.xmark} onClick={()=> setShowMenubar(false)}>
-                                        <FontAwesomeIcon icon={faXmark} />
-                                    </a>
-                                    <div className={Styles.menubarWrapper}>
-                                        <div className={Styles.ulWrapper}>
-                                            <ul className={Styles.menubar}>
-                                                <li className={Styles.menuLi}>
-                                                    <a className={Styles.menuItems}>
-                                                        <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
-                                                        <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>محصولات جدید</span>
-                                                    </a>
-                                                </li>
-                                                <li className={Styles.menuLi} style={{borderTop: '1px solid black'}}>
-                                                    <a className={Styles.menuItems}>
-                                                        <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>پرفروش ترین ها</span>
-                                                    </a>
-                                                </li>
-                                                <li className={Styles.menuLi} style={{borderTop: '1px solid black'}}>
-                                                    <a className={Styles.menuItems}>
-                                                        <FontAwesomeIcon className={Styles.navItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
-                                                        <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>تخفیفات ویژه</span>
-                                                        <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
-                                                    </a>
-                                                    <div className={Styles.offItemsA}>
-                                                        <div className={Styles.offItem} style={{textAlign: 'center'}}>
-                                                            <img className={Styles.fish} alt='fish' src={require('../../assets/img/s1.png')}/>
-                                                            <span style={{fontSize:'3vw', padding:'17px 0', color:'white'}}>ماهی<br/> و آبزیان</span>
-                                                            <span style={{fontSize:'14px', color:'#01e281'}}>۲۰٪ تخفیف</span>
-                                                        </div>
-                                                        <div className={Styles.offItem} style={{textAlign: 'center'}}>
-                                                            <img className={Styles.fish} alt='fish' src={require('../../assets/img/s2.png')}/>
-                                                            <span style={{fontSize:'3vw', padding:'17px 0', color:'white'}}>میوه و<br/>سبزیجات</span>
-                                                            <span style={{fontSize:'14px', color:'#01e281'}}>۴۰٪ تخفیف</span>
-                                                        </div>
+                            {/*{isShownMenubar ?*/}
+                                <div className={Styles.menubarWrapper}>
+                                    <ul className={Styles.menubar}>
+                                        <li className={Styles.menuLi}>
+                                            <a className={Styles.menuItems}>
+                                                <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
+                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>محصولات جدید</span>
+                                            </a>
+                                        </li>
+                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
+                                            <a className={Styles.menuItems}>
+                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>پرفروش ترین ها</span>
+                                            </a>
+                                        </li>
+                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
+                                            <a className={Styles.menuItems}>
+                                                <FontAwesomeIcon className={Styles.navItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
+                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>تخفیفات ویژه</span>
+                                                <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
+                                            </a>
+                                            <div className={Styles.offItemsA}>
+                                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                                    <img className={Styles.fish} alt='fish' src={require('../../assets/img/s1.png')}/>
+                                                    <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>ماهی<br/> و آبزیان</span>
+                                                    <span style={{fontSize:'14px', color:'#01e281'}}>۲۰٪ تخفیف</span>
+                                                </div>
+                                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                                    <img className={Styles.fish} alt='fish' src={require('../../assets/img/s2.png')}/>
+                                                    <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>میوه و<br/>سبزیجات</span>
+                                                    <span style={{fontSize:'14px', color:'#01e281'}}>۴۰٪ تخفیف</span>
+                                                </div>
+                                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                                    <img className={Styles.fish} alt='fish' src={require('../../assets/img/s3.png')}/>
+                                                    <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>نان و<br/>غلات</span>
+                                                    <span style={{fontSize:'14px', color:'#01e281'}}>۱۵٪ تخفیف</span>
+                                                </div>
+                                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                                    <img className={Styles.fish} alt='fish' src={require('../../assets/img/s4.png')}/>
+                                                    <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>لبنیات و<br/>پروتئین</span>
+                                                    <span style={{fontSize:'14px', color:'#01e281'}}>۵۰٪ تخفیف</span>
+                                                </div>
+                                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                                    <img className={Styles.fish} alt='fish' src={require('../../assets/img/s5.png')}/>
+                                                    <span style={{fontSize:'20px', padding:'17px 0', color:'white'}}>گوشت<br/>و مرغ</span>
+                                                    <span style={{fontSize:'14px', color:'#01e281'}}>۴۵٪ تخفیف</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
+                                            <a className={Styles.menuItems+" "+Styles.menuDastresti}>
+                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>دسترسی سریع</span>
+                                                <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
+                                            </a>
+                                            <ul className={Styles.quickAccessA+" "+Styles.dastresi} style={{paddingBottom:'10px', paddingTop:'10px'}}>
+                                                <li className={Styles.quickAccessColumnA}>
+                                                    <div>
+                                                        <span style={{fontSize:'1.5vw', color:'#01e281', paddingBottom:'10px'}}>دسته بندی</span>
                                                     </div>
+                                                    <ul className={Styles.quickAccessColumnA}>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>سوپر مارکت</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>مرغ و ماهی</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>سبزیجات</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>لبنیات</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>نظافت و شستشو</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faFolder} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>برچسب ها</span>
+                                                        </li>
+                                                    </ul>
                                                 </li>
-                                                <li className={Styles.menuLi} style={{borderTop: '1px solid black'}}>
-                                                    <a className={Styles.menuItems}>
-                                                        <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>دسترسی سریع</span>
-                                                        <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
-                                                    </a>
+                                                <li className={Styles.quickAccessColumn} style={{borderRight:'1px solid gray'}}>
+                                                    <div>
+                                                        <span style={{fontSize:'1.5vw', color:'#01e281', paddingBottom:'10px'}}>برچسب ها</span>
+                                                    </div>
+                                                    <ul className={Styles.quickAccessColumnA}>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>پاستا</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>سس</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>سبزیجات</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>گوشت استیک</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>برگر</span>
+                                                        </li>
+                                                        <li className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faTag} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>اسپری</span>
+                                                        </li>
+                                                    </ul>
                                                 </li>
-                                                <li className={Styles.menuLi} style={{borderTop: '1px solid black'}}>
-                                                    <a className={Styles.menuItems}>
-                                                        <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>اخبار</span>
-                                                    </a>
-                                                </li>
-                                                <li className={Styles.menuLi} style={{borderTop: '1px solid black', borderBottom: '1px solid black'}}>
-                                                    <a className={Styles.menuItems}>
-                                                        <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>تماس با ما</span>
-                                                    </a>
+                                                <li className={Styles.quickAccessColumn} style={{borderRight:'1px solid gray'}}>
+                                                    <div>
+                                                        <span style={{fontSize:'1.5vw', color:'#01e281', paddingBottom:'10px'}}>دسترسی سریع</span>
+                                                    </div>
+                                                    <ul className={Styles.quickAccessColumnA}>
+                                                        <div className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>درباره ما</span>
+                                                        </div>
+                                                        <div className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>سوالات متداول</span>
+                                                        </div>
+                                                        <div className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>حساب کاربری من</span>
+                                                        </div>
+                                                        <div className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>سفارشات</span>
+                                                        </div>
+                                                        <div className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>دانلود ها</span>
+                                                        </div>
+                                                        <div className={Styles.quickAccessItem}>
+                                                            <FontAwesomeIcon style={{fontSize:'1.2vw', color:'gray', marginLeft:'7px'}} icon={faLink} />
+                                                            <span style={{fontSize:'1.2vw', color:'white'}}>فراموشی رمز عبور</span>
+                                                        </div>
+                                                    </ul>
                                                 </li>
                                             </ul>
-                                        </div>
-                                        <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", position:"absolute",bottom:"35px", width: "120px" }}>
-                                            <div style={{display:"flex", flexDirection:"row", justifyContent:"space-around", width: "120px" }}>
-                                                <div className={Styles.socialMediaIconWrapper}>
+                                        </li>
+                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
+                                            <a className={Styles.menuItems}>
+                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>اخبار</span>
+                                            </a>
+                                        </li>
+                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray', borderBottom: '1px solid gray'}}>
+                                            <a className={Styles.menuItems}>
+                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>تماس با ما</span>
+                                            </a>
+                                        </li>
+                                        <li className={Styles.menuLi+" "+Styles.menuCaption}>
+                                            <section style={{display:"flex", flexDirection:"row", justifyContent:"space-around", width: "120px" }}>
+                                                <section className={Styles.socialMediaIconWrapper}>
                                                     <img className={Styles.socialMediaIcon} alt='logo' src={require('../../assets/img/eitaa-icon-white2.png')} />
-                                                </div>
-                                                <div className={Styles.socialMediaIconWrapper}>
+                                                </section>
+                                                <section className={Styles.socialMediaIconWrapper}>
                                                     <img className={Styles.socialMediaIcon} alt='logo' src={require('../../assets/img/instagram.png')} />
-                                                </div>
-                                            </div>
-                                            <div style={{color:"white", fontSize:"18px", marginTop:"20px"}}>
+                                                </section>
+                                            </section>
+                                            <section style={{color:"white", fontSize:"18px", marginTop:"20px"}}>
                                                 <span>کپی رایت ۲۰۲۳</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            </section>
+                                        </li>
+                                    </ul>
                                 </div>
-                            : null}
+                            {/*: null}*/}
                         </div>
                     </div>
                 </div>

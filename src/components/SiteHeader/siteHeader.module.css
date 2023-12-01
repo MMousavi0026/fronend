@@ -110,10 +110,6 @@ input:focus {
     transition: border-color 0.3s, color 0.3s;
 }
 
-.bars:active + .barsWrapper {
-    display: flex;
-}
-
 .barsWrapper {
     display: none;
 }
@@ -259,6 +255,14 @@ div ul li:hover div {
     display: flex!important;
 }
 
+div ul li ul {
+    display: none!important;
+}
+
+div ul li:hover ul {
+    display: flex!important;
+}
+
 .offItems {
     width: 83vw;
     height: 56vh;
@@ -274,6 +278,7 @@ div ul li:hover div {
 }
 
 .offItem {
+    min-width: 100px;
     width: 14vw;
     border: gray solid 1px;
     border-radius: 16px;
@@ -289,7 +294,26 @@ div ul li:hover div {
     border-color: #01e281;
 }
 
+.offItemA {
+    background-color: #1c3e56;
+    min-width: 200px;
+    width: 70%;
+    border: gray solid 1px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8.3vh 0;
+    transition: border-color .5s;
+    cursor: pointer;
+}
+
+.offItemA:hover {
+    border-color: #01e281;
+}
+
 .fish {
+    min-width: 70px;
     width: 5.5vw;
 }
 
@@ -298,33 +322,21 @@ div ul li:hover div {
     left: 12px;
 }
 
-.menubarsWrapper {
-    height: 100%;
+.menubarWrapper {
+    background-color: #1c3e56;
+    min-width: 250px;
+    width: 60vw;
+    height: fit-content;
     position: absolute;
     z-index: 1;
     left: 0;
     top: 0;
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 
-.menubarWrapper {
-    height: 100%;
-    width: 73vw;
-    background-color: #1c3e56;
+.barsWrapper:hover .menubarWrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    position: relative;
-}
-
-.ulWrapper {
-    height: 60%;
-    position: absolute;
-    margin-right: -10px;
-    margin-top: -20px;
-    top: 0;
 }
 
 .socialMediaIconWrapper {
@@ -346,8 +358,8 @@ div ul li:hover div {
 }
 
 .menuLi {
-    width: 65vw;
-    margin-right: -40px;
+    width: 100%;
+    height: 10vh;
 }
 
 .menubar {
@@ -356,8 +368,10 @@ div ul li:hover div {
     align-items: start;
     justify-content: space-around;
     background-size: cover;
-    height: 100%;
-    top: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .menuItems {
@@ -368,8 +382,9 @@ div ul li:hover div {
     padding-bottom: 10px;
     padding-top: 10px;
     text-decoration: none;
-    width: 100%;
+    width: 90%;
     top: 0;
+    margin-right: 20px;
 }
 
 .menuItem {
@@ -394,6 +409,7 @@ a {
 .offItemsA {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .quickAccess {
@@ -408,6 +424,12 @@ a {
     position: absolute;
     z-index: 1;
 }
+
+.quickAccessA {
+    background-color: #1c3e56!important;
+    flex-direction: column!important;
+}
+
 .quickAccessColumn {
     height: 95%;
     display: flex;
@@ -428,4 +450,26 @@ a {
 }
 .quickAccessItem span:hover {
     color: #01e281!important;
+}
+
+.menuDastresti:hover .dastresi {
+    display: flex;
+}
+
+.menuCaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 0;
+    z-index: 1;
+}
+
+.quickAccessColumnA {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding: 0 2vw;
 }
