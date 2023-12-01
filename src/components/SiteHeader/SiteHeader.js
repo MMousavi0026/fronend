@@ -11,11 +11,11 @@ import {
     faPhoneVolume, faTag,
     faUser, faXmark
 } from '@fortawesome/free-solid-svg-icons';
-import { CSSTransition } from 'react-transition-group';
 
 const SiteHeader = () => {
 
-    const [isShownMenubar, setShowMenubar] = useState(false);
+    const [isShownOffItems, setShownOffItems] = useState(false);
+    const [isShownMenuDastresti, setShownMenuDastresti] = useState(false);
 
     return (
         <div className={Styles.headerWrapper}>
@@ -46,29 +46,29 @@ const SiteHeader = () => {
                             <FontAwesomeIcon className={Styles.icon} icon={faUser} />
                         </a>
                         <div className={Styles.barsWrapper}>
-                            <a className={Styles.bars} onClick={()=> setShowMenubar(true)}>
+                            <a className={Styles.bars}>
                                 <FontAwesomeIcon className={Styles.icon} icon={faBars} />
                             </a>
-                            {/*{isShownMenubar ?*/}
-                                <div className={Styles.menubarWrapper}>
-                                    <ul className={Styles.menubar}>
-                                        <li className={Styles.menuLi}>
-                                            <a className={Styles.menuItems}>
-                                                <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
-                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>محصولات جدید</span>
-                                            </a>
-                                        </li>
-                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
-                                            <a className={Styles.menuItems}>
-                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>پرفروش ترین ها</span>
-                                            </a>
-                                        </li>
-                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
-                                            <a className={Styles.menuItems}>
-                                                <FontAwesomeIcon className={Styles.navItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
-                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>تخفیفات ویژه</span>
-                                                <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
-                                            </a>
+                            <div className={Styles.menubarWrapper}>
+                                <ul className={Styles.menubar}>
+                                    <li className={Styles.menuLi}>
+                                        <a className={Styles.menuItems}>
+                                            <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
+                                            <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>محصولات جدید</span>
+                                        </a>
+                                    </li>
+                                    <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
+                                        <a className={Styles.menuItems}>
+                                            <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>پرفروش ترین ها</span>
+                                        </a>
+                                    </li>
+                                    <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
+                                        <a className={Styles.menuItems} onClick={()=>setShownOffItems(!isShownOffItems)}>
+                                            <FontAwesomeIcon className={Styles.navItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
+                                            <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>تخفیفات ویژه</span>
+                                            <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
+                                        </a>
+                                        {isShownOffItems ?
                                             <div className={Styles.offItemsA}>
                                                 <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
                                                     <img className={Styles.fish} alt='fish' src={require('../../assets/img/s1.png')}/>
@@ -96,12 +96,14 @@ const SiteHeader = () => {
                                                     <span style={{fontSize:'14px', color:'#01e281'}}>۴۵٪ تخفیف</span>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
-                                            <a className={Styles.menuItems+" "+Styles.menuDastresti}>
-                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>دسترسی سریع</span>
-                                                <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
-                                            </a>
+                                        : null}
+                                    </li>
+                                    <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
+                                        <a className={Styles.menuItems+" "+Styles.menuDastresti} onClick={()=>setShownMenuDastresti(!isShownMenuDastresti)}>
+                                            <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>دسترسی سریع</span>
+                                            <FontAwesomeIcon className={Styles.menuItem} style={{fontSize:"21px", color:"white", marginRight:"6px"}} icon={faCaretDown} />
+                                        </a>
+                                        {isShownMenuDastresti ?
                                             <ul className={Styles.quickAccessA+" "+Styles.dastresi} style={{paddingBottom:'10px', paddingTop:'10px'}}>
                                                 <li className={Styles.quickAccessColumnA}>
                                                     <div>
@@ -197,33 +199,33 @@ const SiteHeader = () => {
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </li>
-                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
-                                            <a className={Styles.menuItems}>
-                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>اخبار</span>
-                                            </a>
-                                        </li>
-                                        <li className={Styles.menuLi} style={{borderTop: '1px solid gray', borderBottom: '1px solid gray'}}>
-                                            <a className={Styles.menuItems}>
-                                                <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>تماس با ما</span>
-                                            </a>
-                                        </li>
-                                        <li className={Styles.menuLi+" "+Styles.menuCaption}>
-                                            <section style={{display:"flex", flexDirection:"row", justifyContent:"space-around", width: "120px" }}>
-                                                <section className={Styles.socialMediaIconWrapper}>
-                                                    <img className={Styles.socialMediaIcon} alt='logo' src={require('../../assets/img/eitaa-icon-white2.png')} />
-                                                </section>
-                                                <section className={Styles.socialMediaIconWrapper}>
-                                                    <img className={Styles.socialMediaIcon} alt='logo' src={require('../../assets/img/instagram.png')} />
-                                                </section>
+                                        : null}
+                                    </li>
+                                    <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
+                                        <a className={Styles.menuItems}>
+                                            <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>اخبار</span>
+                                        </a>
+                                    </li>
+                                    <li className={Styles.menuLi} style={{borderTop: '1px solid gray', borderBottom: '1px solid gray'}}>
+                                        <a className={Styles.menuItems}>
+                                            <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>تماس با ما</span>
+                                        </a>
+                                    </li>
+                                    <li className={Styles.menuLi+" "+Styles.menuCaption}>
+                                        <section style={{display:"flex", flexDirection:"row", justifyContent:"space-around", width: "120px" }}>
+                                            <section className={Styles.socialMediaIconWrapper}>
+                                                <img className={Styles.socialMediaIcon} alt='logo' src={require('../../assets/img/eitaa-icon-white2.png')} />
                                             </section>
-                                            <section style={{color:"white", fontSize:"18px", marginTop:"20px"}}>
-                                                <span>کپی رایت ۲۰۲۳</span>
+                                            <section className={Styles.socialMediaIconWrapper}>
+                                                <img className={Styles.socialMediaIcon} alt='logo' src={require('../../assets/img/instagram.png')} />
                                             </section>
-                                        </li>
-                                    </ul>
-                                </div>
-                            {/*: null}*/}
+                                        </section>
+                                        <section style={{color:"white", fontSize:"18px", marginTop:"20px"}}>
+                                            <span>کپی رایت ۲۰۲۳</span>
+                                        </section>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
