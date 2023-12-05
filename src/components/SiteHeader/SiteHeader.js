@@ -42,7 +42,7 @@ const SiteHeader = () => {
                         <a className={Styles.store}>
                             <FontAwesomeIcon className={Styles.icon} icon={faBasketShopping} />
                         </a>
-                           <a className={Styles.love}>
+                        <a className={Styles.love}>
                             <FontAwesomeIcon className={Styles.icon} icon={faHeart} />
                         </a>
                         <a className={Styles.profile}>

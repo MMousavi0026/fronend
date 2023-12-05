@@ -1,0 +1,387 @@
+.container {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.box1 {
+    width: 98.7vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/04/bg-hero.jpg");
+}
+
+.button1 {
+    width: 190px;
+    background-color: #122d40;
+    border-radius: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.button2 {
+    width: 190px;
+    border: #122d40 solid 2px;
+    border-radius: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s, border 0.4s;
+}
+
+.button1:hover {
+    background-color: #01e281;
+}
+
+.button2:hover {
+    background-color: #01e281;
+    border: #01e281 solid 2px;
+}
+
+.button1Text {
+    transition: color 0.4s;
+}
+
+.button1:hover .button1Text {
+    color: #122d40 !important;
+}
+
+.floatBox {
+    border-radius: 100vw;
+    background-color: white;
+    box-shadow: 0 15px 60px 0 rgba(18,45.00000000000004,64,.15) ;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -55px;
+}
+
+.floatBoxItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.floatBoxItemImg {
+    background-color: #ccffea;
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.space {
+    width: 100%;
+    height: 120px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+}
+
+.box2Column1 {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box2Column2 {
+    width: 30%;
+    height: 100%;
+    background-color: #01e281;
+    border-radius: 25px;
+    position: relative;
+}
+
+.box2Column2 img {
+    float:"bottom"
+}
+
+.button3 {
+    width: 190px;
+    background-color: #122d40;
+    border-radius: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    margin: 30px;
+}
+
+.button3:hover {
+    background-color: #ffffff;
+}
+
+.button3Text {
+    color: #01e281;
+    transition: color .4s;
+}
+
+.button3:hover .button3Text {
+    color: #122d40;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+
+.fish {
+    min-width: 70px;
+    width: 5.5vw;
+}
+
+.offItemsA {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offItemA {
+    min-width: 185px;
+    width: 10%;
+    border: #e6e6e6 solid 1px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vh 0;
+    transition: border-color .4s, box-shadow .4s;
+    cursor: pointer;
+}
+
+.offItemA:hover {
+    border-color: #01e281;
+    box-shadow: 0 15px 60px 0 rgba(18,45.00000000000004,64,.15) ;
+}
+
+.button4 {
+    width: 190px;
+    background-color: #01e281;
+    border-radius: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    margin: 30px;
+}
+
+.button4:hover {
+    background-color: #122d40;
+}
+
+.button4Text {
+    color: #122d40;
+    transition: color .4s;
+}
+
+.button4:hover .button4Text {
+    color: #01e281;
+}
+
+.box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+
+.box4Item {
+    width: 22%;
+    height: 350px;
+    box-shadow: 0 15px 60px 0 rgba(18,45.00000000000004,64,.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    position: relative;
+}
+
+.box4Item:hover .box4ItemTitle {
+    color: #01e281!important;
+}
+
+.box4ItemOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+
+.love:hover .icon {
+    border: #01e281 solid 1px;
+    color: #01e281;
+}
+
+.love {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.love:hover .box4ItemOptionTitle {
+    display: flex;
+}
+
+.icon {
+    font-size: 15px;
+    color: #122d40;
+    border: #122d40 solid 1px;
+    border-radius: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    transition: color .3s, border .3s;
+}
+
+.icon:hover {
+    border: #01e281 solid 1px;
+    color: #01e281;
+}
+
+.box4ItemOptionTitle {
+    background-color: #01e281;
+    color: white;
+    border-radius: 50px;
+    font-size: 12px;
+    padding: 3.5px 10px;
+    height: 22px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.box4Item:hover .button5 {
+    display: flex!important;
+}
+
+.button5 {
+    width: 90%;
+    background-color: #01e281;
+    border-radius: 100vw;
+    height: 40px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    margin-top: -20px;
+    position: absolute;
+    bottom: -20px;
+}
+
+.button5:hover {
+    background-color: #122d40;
+}
+
+.button5Text {
+    color: #122d40;
+    font-size: 18px;
+    transition: color .4s;
+}
+
+.button5:hover .button5Text {
+    color: #01e281;
+}
+
+.box5 {
+    width: 100%;
+    height: 550px;
+    border-radius: 35px;
+    background-color: #01e281;
+    background-image: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/05/box-bg.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.box6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box6Item {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button6 {
+    width: fit-content;
+    background-color: #122d40;
+    border: white solid 6px;
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin-bottom: -19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.box6Item:hover .box6ItemLink{
+    opacity: .8 !important;
+}
+
+.box6ItemLink {
+    font-size:30px;
+    color:white;
+    padding:110px 105px;
+    background-color:#01e281;
+    opacity:0;
+    transition:opacity .3s ease-in-out;
+    border-radius:20px;
+    position:absolute;
+    margin-top:35px;
+}

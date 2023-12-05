@@ -6,7 +6,7 @@ import {NavLink, Outlet} from "react-router-dom";
 
 const AppBar = () => {
     return (
-        <>
+        <div style={{zIndex:'1'}}>
             <nav className={Styles.wrapper}>
                 <NavLink to="/" className={Styles.item}>
                     <FontAwesomeIcon className={Styles.icon} icon={faHouse} />
@@ -26,7 +26,7 @@ const AppBar = () => {
                 </NavLink>
             </nav>
             <Outlet/>
-        </>
+        </div>
     );
 };
 
