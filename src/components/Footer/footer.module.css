@@ -1,0 +1,83 @@
+.footerWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floatBox {
+    background-image: url('https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/04/bg-subscribe.jpg');
+    background-color: #1c3e56;
+    width: 92%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.button1 {
+    width: 130px;
+    background-color: #01e281;
+    border-radius: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    position: absolute;
+    left: 8px;
+}
+
+.button1:hover {
+    background-color: #122d40;
+}
+
+.button1Text {
+    color: #122d40;
+    transition: color .4s;
+    font-size: 18px;
+}
+
+.button1:hover .button1Text {
+    color: #01e281;
+}
+
+.box1 {
+    width: 100%;
+    height: fit-content;
+    background-color: #122d40;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box1Row1 {
+    width: 100%;
+}
+
+.box1Item {
+    border-radius: 40px;
+    width: 28%;
+    height: 350px;
+    border: rgba(86, 112, 133, 0.5) solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1ItemIcon {
+    font-size: 18px;
+}
+

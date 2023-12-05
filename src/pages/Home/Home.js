@@ -2,7 +2,6 @@ import React from 'react';
 import SiteHeader from '../../components/SiteHeader/SiteHeader';
 import AppBar from "../../components/AppBar/AppBar";
 import Styles from './home.module.css';
-import { ReactComponent as SvgComponent } from '../../assets/img/homeBox1.svg'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faBasketShopping,
@@ -362,7 +361,7 @@ const Home = (props) => {
                     </div>
                     <div className={Styles.space}></div>
                     <div className={Styles.box6}>
-                        <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center', marginBottom:'10px'}}>
+                        <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center', marginBottom:'25px'}}>
                             <div>
                                 <span style={{fontSize:'40px', color:'black'}}>جدید ترین</span>
                                 <span style={{fontSize:'40px', color:'#01e281'}}> اخبار و مقالات</span>
