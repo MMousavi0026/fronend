@@ -64,6 +64,10 @@
 
 .box1Row1 {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .box1Item {
@@ -77,7 +81,66 @@
     justify-content: center;
 }
 
-.box1ItemIcon {
-    font-size: 18px;
+.socialMediaIcon {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border: rgba(28, 62, 86, 0.5) solid 1px;
+    border-radius: 100%;
+    background-color: #1c3e56;
+    cursor: pointer;
 }
 
+.box1ItemIcon {
+    font-size: 15px;
+    padding: 9px 7px;
+    border-radius: 100%;
+    color: #01e281;
+    background-color: rgba(1, 226, 129, 0.2);
+    margin-left: 6px;
+    transition: background-color .3s, color .3s;
+}
+
+.box1Item2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+.box1Item2:hover span {
+    color: #01e281!important;
+}
+
+.box1Item2:hover .box1ItemIcon {
+    color: #122d40;
+    background-color: #01e281;
+}
+
+.button3 {
+    background-color: #01e281;
+    padding: 11px 27px;
+    border-radius: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.button3:hover {
+    background-color: #ffffff;
+}
+
+.button3Text {
+    color: #122d40;
+    transition: color .4s;
+}
+
+.button3:hover .button3Text {
+    color: #122d40;
+}
