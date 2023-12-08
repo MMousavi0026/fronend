@@ -70,7 +70,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: -55px;
+    margin-top: -65px;
 }
 
 .floatBoxItem {
@@ -119,6 +119,33 @@
 
 .box2Column2 img {
     float:"bottom"
+}
+
+.button7 {
+    width: 190px;
+    background-color: #01e281;
+    border-radius: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    margin: 30px;
+}
+
+.button7:hover {
+    background-color: #354c5d;
+}
+
+.button7Text {
+    color: #122d40;
+    transition: color .4s;
+}
+
+.button7:hover .button7Text {
+    color: #01e281;
 }
 
 .button3 {
@@ -384,4 +411,37 @@
     border-radius:20px;
     position:absolute;
     margin-top:35px;
+}
+
+.box2Column1Item1 {
+    background-image: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/05/bg-2.png),
+        linear-gradient(90deg,#ff3f55,#ff3f55);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:48.6%;
+    height:100%;
+    border-radius:20px;
+}
+
+.box2Column1Item2 {
+    background-image: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-1.png),
+        linear-gradient(90deg,#f4f9f5,#f4f9f5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:48.6%;
+    height:100%;
+    border-radius:20px;
+}
+
+.box2Column1Item3 {
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-3.png) no-repeat,
+        linear-gradient(90deg, #122d40, #122d40);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 52%;
+    border-radius: 20px;
 }

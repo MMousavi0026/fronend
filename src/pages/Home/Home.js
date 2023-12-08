@@ -74,11 +74,23 @@ const Home = (props) => {
                     <div className={Styles.space}></div>
                     <div className={Styles.box2}>
                         <div className={Styles.box2Column1}>
-                            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between', height:'48%', width:'100%'}}>
-                                <div style={{width:'48.6%', height:'100%', backgroundColor:'#ff3f55', borderRadius:'20px'}}></div>
-                                <div style={{width:'48.6%', height:'100%', backgroundColor:'#ededed', borderRadius:'20px'}}></div>
+                            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between', height:'44.6%', width:'100%'}}>
+                                <div className={Styles.box2Column1Item1}>
+                                    <span style={{fontSize:'23px', color:'white',display:'block', textAlign:'left', marginRight:'15px', marginTop:'30px', marginBottom:'10px'}}>تخفیف ۵۰٪</span>
+                                    <span style={{fontSize:'45px', color:'white',display:'block', textAlign:'left', marginRight:'15px'}}>سس ها</span>
+                                </div>
+                                <div className={Styles.box2Column1Item2}>
+                                    <span style={{fontSize:'23px', color:'#01e281',display:'block', textAlign:'left', marginLeft:'55px', marginTop:'50px', marginBottom:'20px'}}>تخفیف ۵۰٪</span>
+                                    <span style={{fontSize:'45px', color:'#122d40',display:'block', textAlign:'left', marginLeft:'55px'}}>تنقلات</span>
+                                </div>
                             </div>
-                            <div style={{width:'100%', height:'48%', backgroundColor:'#1c3e56', borderRadius:'20px'}}></div>
+                            <div className={Styles.box2Column1Item3}>
+                                <span style={{fontSize:'40px', color:'white',display:'block', textAlign:'left', marginRight:'55px', marginTop:'50px', marginBottom:'20px'}}>تخفیف ویژه ۵۰٪</span>
+                                <span style={{fontSize:'45px', color:'white',display:'block', textAlign:'left', marginRight:'55px'}}>روی تمامی میوه ها</span>
+                                <a className={Styles.button7}>
+                                    <span className={Styles.button7Text} style={{fontSize:"18px"}}>الان بخرید</span>
+                                </a>
+                            </div>
                         </div>
                         <div className={Styles.box2Column2}>
                             <span style={{fontSize:'23px', color:'white',display:'block', marginRight:'30px', marginTop:'40px', marginBottom:'10px'}}>تخفیف ۵۰٪</span>
@@ -97,28 +109,28 @@ const Home = (props) => {
                         </div>
                         <div style={{width:'100%', marginTop:'40px'}}>
                             <div className={Styles.offItemsA}>
-                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                <div className={Styles.offItemA} style={{textAlign: 'center'}}>
                                     <img className={Styles.fish} alt='fish' src={require('../../assets/img/s1.png')}/>
                                     <span style={{fontSize:'20px', paddingTop:'17px', color:'black'}}>ماهی<br/> و آبزیان</span>
                                 </div>
-                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                <div className={Styles.offItemA} style={{textAlign: 'center'}}>
                                     <img className={Styles.fish} alt='fish' src={require('../../assets/img/s2.png')}/>
                                     <span style={{fontSize:'20px', paddingTop:'17px', color:'black'}}>میوه و<br/>سبزیجات</span>
                                 </div>
-                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                <div className={Styles.offItemA} style={{textAlign: 'center'}}>
                                     <img className={Styles.fish} alt='fish' src={require('../../assets/img/s3.png')}/>
                                     <span style={{fontSize:'20px', paddingTop:'17px', color:'black'}}>نان و<br/>غلات</span>
                                 </div>
-                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                <div className={Styles.offItemA} style={{textAlign: 'center'}}>
                                     <img className={Styles.fish} alt='fish' src={require('../../assets/img/s4.png')}/>
                                     <span style={{fontSize:'20px', paddingTop:'17px', color:'black'}}>لبنیات و<br/>پروتئین</span>
                                 </div>
-                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
+                                <div className={Styles.offItemA} style={{textAlign: 'center'}}>
                                     <img className={Styles.fish} alt='fish' src={require('../../assets/img/s5.png')}/>
                                     <span style={{fontSize:'20px', paddingTop:'17px', color:'black'}}>شوینده و<br/>نظافتی</span>
                                 </div>
-                                <div className={Styles.offItemA} style={{textAlign: 'center', marginBottom:'10px'}}>
-                                    <img className={Styles.fish} alt='fish' src={require('../../assets/img/s5.png')}/>
+                                <div className={Styles.offItemA} style={{textAlign: 'center'}}>
+                                    <img className={Styles.fish} alt='fish' src={require('../../assets/img/s6.png')}/>
                                     <span style={{fontSize:'20px', paddingTop:'17px', color:'black'}}>گوشت و<br/>استیک</span>
                                 </div>
                             </div>
