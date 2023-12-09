@@ -1,5 +1,5 @@
 .container {
-    width: 92%;
+    width: 92vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,19 +61,21 @@
 }
 
 .floatBox {
-    border-radius: 100vw;
+    border-radius: 100px;
     background-color: white;
     box-shadow: 0 15px 60px 0 rgba(18,45.00000000000004,64,.15) ;
-    width: 100%;
+    width: 96%;
     height: 130px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: -65px;
+    padding: 0 20px;
 }
 
 .floatBoxItem {
+    width: 25%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -97,12 +99,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 600px;
+    height: fit-content;
 }
 
 .box2Column1 {
     width: 68%;
-    height: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -111,7 +113,7 @@
 
 .box2Column2 {
     width: 30%;
-    height: 100%;
+    height: 600px;
     background-color: #01e281;
     border-radius: 25px;
     position: relative;
@@ -121,7 +123,7 @@
     float:"bottom"
 }
 
-.button7 {
+.button7, .button4{
     width: 190px;
     background-color: #01e281;
     border-radius: 100vw;
@@ -132,7 +134,7 @@
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.4s;
-    margin: 30px;
+    margin: 30px 0;
 }
 
 .button7:hover {
@@ -197,8 +199,7 @@
 }
 
 .offItemA {
-    min-width: 185px;
-    width: 10%;
+    width: 14vw;
     border: #e6e6e6 solid 1px;
     border-radius: 16px;
     display: flex;
@@ -212,20 +213,6 @@
 .offItemA:hover {
     border-color: #01e281;
     box-shadow: 0 15px 60px 0 rgba(18,45.00000000000004,64,.15) ;
-}
-
-.button4 {
-    width: 190px;
-    background-color: #01e281;
-    border-radius: 100vw;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.4s;
-    margin: 30px;
 }
 
 .button4:hover {
@@ -358,7 +345,7 @@
 
 .box5 {
     width: 100%;
-    height: 550px;
+    height: fit-content;
     border-radius: 35px;
     background-color: #01e281;
     background-image: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/05/box-bg.jpg);
@@ -378,10 +365,12 @@
 
 .box6Item {
     width: 22%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .button6 {
@@ -404,18 +393,21 @@
 .box6ItemLink {
     font-size:30px;
     color:white;
-    padding:110px 105px;
+    padding: 30% 30%;
     background-color:#01e281;
     opacity:0;
     transition:opacity .3s ease-in-out;
     border-radius:20px;
     position:absolute;
-    margin-top:35px;
+    transform: translate(-50%, -50%);
+    top: 44%;
+    left: 50%;
+    bottom: auto;
 }
 
 .box2Column1Item1 {
-    background-image: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/05/bg-2.png),
-        linear-gradient(90deg,#ff3f55,#ff3f55);
+    background-size: contain!important;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/05/bg-2.png), linear-gradient(90deg, #ff3f55, #ff3f55), no-repeat, left bottom;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -425,8 +417,8 @@
 }
 
 .box2Column1Item2 {
-    background-image: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-1.png),
-        linear-gradient(90deg,#f4f9f5,#f4f9f5);
+    background-size: contain!important;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-1.png), linear-gradient(90deg, #f4f9f5, #f4f9f5) no-repeat right bottom;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -436,12 +428,121 @@
 }
 
 .box2Column1Item3 {
-    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-3.png) no-repeat,
-        linear-gradient(90deg, #122d40, #122d40);
+    background-size: contain!important;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-3.png), linear-gradient(90deg, #122d40, #122d40) no-repeat left bottom;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     height: 52%;
     border-radius: 20px;
+}
+
+.box2Column2 {
+    background-size: contain!important;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/04/bg-4.png), linear-gradient(90deg, #01e281, #01e281), no-repeat, right bottom;
+}
+
+@media (max-width: 1024px) {
+    .floatBox {
+        height: 270px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .floatBoxItem {
+        flex: 0 0 45%;
+        margin-bottom: 22px;
+    }
+
+    .box1B {
+        flex-wrap: wrap;
+    }
+
+    .box1B > div {
+        width: 100% !important;
+    }
+
+    .box1Item1 {
+        padding-top: 85px;
+    }
+
+    .box1Item1Buttons {
+        width: 50% !important;
+    }
+
+    .box2 {
+        flex-wrap: wrap;
+    }
+
+    .box2 > div {
+        width: 100% !important;
+    }
+
+    .box2Column2 {
+        margin-top: 22px;
+    }
+
+    .offItemsA {
+        flex-wrap: wrap;
+    }
+
+    .offItemA {
+        width: 31.5%;
+        margin-bottom: 22px;
+    }
+
+    .box5 {
+        flex-wrap: wrap;
+        align-items: space-evenly;
+    }
+
+    .box5Text {
+        width: 90% !important;
+        height: 450px!important;
+    }
+
+    .box5Img {
+        width: 65% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .box1Item1, .box1Item1 > span {
+        align-items: center!important;
+        text-align: center!important;
+    }
+    .box1Item1Buttons {
+        width: 70% !important;
+    }
+
+    .box4Title {
+        flex-wrap: wrap;
+        justify-content: center!important;
+    }
+    .box4Title div {
+        width: 100%;
+    }
+    .box4Items {
+        flex-wrap: wrap;
+        margin: 0!important;
+    }
+    .box4Item {
+        width: 48%;
+        margin-bottom: 50px;
+    }
+
+    .box5Text {
+        align-items: center!important;
+    }
+
+    .box6Items {
+        flex-wrap: wrap;
+    }
+
+    .box6Item {
+        width: 46%;
+        margin-bottom: 50px;
+    }
 }

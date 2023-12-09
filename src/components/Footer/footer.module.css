@@ -17,6 +17,7 @@
     border-radius: 40px;
     margin-bottom: -80px;
     z-index: 1;
+    flex-wrap: wrap;
 }
 
 .inputWrapper {
@@ -27,7 +28,7 @@
 }
 
 .button1 {
-    width: 130px;
+    width: 125px;
     background-color: #01e281;
     border-radius: 100vw;
     height: 50px;
@@ -57,7 +58,6 @@
 
 .box1 {
     width: 100%;
-    height: 630px;
     background-color: #122d40;
     display: flex;
     flex-direction: column;
@@ -66,17 +66,13 @@
     border-radius: 40px 40px 0 0;
 }
 
-.space {
-    width: 100%;
-    height: 100px;
-}
-
 .box1Row1 {
     width: 95%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .box1Item {
@@ -99,6 +95,7 @@
     border-radius: 100%;
     background-color: #1c3e56;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .box1ItemIcon {
@@ -164,4 +161,49 @@
     border-top: rgba(86, 112, 133, 0.5) solid 1px;
     border-left: rgba(86, 112, 133, 0.5) solid 1px;
     border-right: rgba(86, 112, 133, 0.5) solid 1px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .floatBox >div > span {
+        font-size: 3.5vw!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .box1Item {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .box1ItemA {
+        align-items: center!important;
+    }
+    .box1Row1 {
+        justify-content: center;
+    }
+    .box1Item2A {
+        align-items: center!important;
+    }
+
+    .socialMediaIcons {
+        justify-content: center!important;
+    }
+
+    .box1Row2 {
+        justify-content: center!important;
+    }
+
+    .floatBoxItem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .floatBox {
+        justify-content: center!important;
+    }
+
+    .inputWrapper > input {
+        width: 60vw!important;
+        flex-wrap: wrap;
+    }
 }

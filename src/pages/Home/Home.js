@@ -18,16 +18,15 @@ const Home = (props) => {
     return (
         <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
             <SiteHeader/>
-            <AppBar />
             <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
                 <div className={Styles.container}>
                     <div className={Styles.box1}>
-                        <div style={{width:'91vw', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent:'space-around'}}>
-                            <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', width:'49%', height:'100%', textAlign:'right'}}>
-                                <h1 style={{fontSize:'40px', textAlign:'right', width:'100%', color:'#01e281',margin:'0'}}>سوپر مارکت اکسترا</h1>
-                                <span style={{fontSize:'60px', textAlign:'right', width:'100%', padding:'30px 0'}}>تازه تر از همه جا</span>
-                                <span style={{fontSize:'15px', textAlign:'right', width:'100%', color:'#535353'}}>سوپرمارکت شکلی از خواربارفروشی ولی بزرگتر از آن است که مشتری خودش محصولات را از قفسه برمی‌دارد یا به اصطلاح سلف سرویس است.</span>
-                                <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-around', paddingTop:'30px', width:'100%'}}>
+                        <div className={Styles.box1B} style={{width:'91vw', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent:'space-around'}}>
+                            <div className={Styles.box1Item1} style={{display:'flex', flexDirection:'column', alignItems:'flex-start', justifyContent:'center', width:'49%', height:'100%'}}>
+                                <h1 style={{fontSize:'40px', textAlign:'center', color:'#01e281',margin:'0'}}>سوپر مارکت اکسترا</h1>
+                                <span style={{fontSize:'60px', textAlign:'center', padding:'30px 0'}}>تازه تر از همه جا</span>
+                                <span style={{fontSize:'18px', textAlign:'right', color:'#535353'}}>سوپرمارکت شکلی از خواربارفروشی ولی بزرگتر از آن است که مشتری خودش محصولات را از قفسه برمی‌دارد یا به اصطلاح سلف سرویس است.</span>
+                                <div className={Styles.box1Item1Buttons} style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-around', paddingTop:'30px', width:'100%'}}>
                                     <a className={Styles.button1}>
                                         <span className={Styles.button1Text} style={{fontSize:"18px", color:'white'}}>۲۵٪ تخفیف ویژه</span>
                                     </a>
@@ -98,7 +97,6 @@ const Home = (props) => {
                             <a className={Styles.button3}>
                                 <span className={Styles.button3Text} style={{fontSize:"18px"}}>الان بخرید</span>
                             </a>
-                            <img src={require('../../assets/img/vegetables.png')} alt="vegetables" style={{width:"95%", position:'absolute', bottom:'0', right:'8px'}}/>
                         </div>
                     </div>
                     <div className={Styles.space}></div>
@@ -138,16 +136,16 @@ const Home = (props) => {
                     </div>
                     <div className={Styles.space}></div>
                     <div className={Styles.box4}>
-                        <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center', marginBottom:'10px'}}>
-                            <div>
+                        <div className={Styles.box4Title} style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center', marginBottom:'10px'}}>
+                            <div style={{display:'flex', alignItems:'center', flexDirection:'row', justifyContent:'center'}}>
                                 <span style={{fontSize:'40px', color:'black'}}>پرفروش ترین</span>
                                 <span style={{fontSize:'40px', color:'#01e281'}}> محصولات</span>
                             </div>
-                            <a className={Styles.button4} style={{marginLeft:'40px'}}>
+                            <a className={Styles.button4}>
                                 <span className={Styles.button4Text} style={{fontSize:"18px"}}>همه محصولات</span>
                             </a>
                         </div>
-                        <div style={{width:'100%', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between'}}>
+                        <div className={Styles.box4Items} style={{width:'100%', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between'}}>
                             <div className={Styles.box4Item}>
                                 <img alt='فیله مرغ' src={require('../../assets/img/filehMorgh.jpg')} style={{width:'70%'}}/>
                                 <div style={{width:'70%', marginTop:'-40px'}}>
@@ -249,7 +247,7 @@ const Home = (props) => {
                                 </a>
                             </div>
                         </div>
-                        <div style={{width:'100%', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:'50px'}}>
+                        <div className={Styles.box4Items} style={{width:'100%', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:'50px'}}>
                             <div className={Styles.box4Item}>
                                 <img alt='فیله مرغ' src={require('../../assets/img/filehMorgh.jpg')} style={{width:'70%'}}/>
                                 <div style={{width:'70%', marginTop:'-40px'}}>
@@ -354,10 +352,10 @@ const Home = (props) => {
                     </div>
                     <div className={Styles.space}></div>
                     <div className={Styles.box5}>
-                        <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', width:'49%', height:'100%', textAlign:'right'}}>
-                            <h1 style={{fontSize:'40px', textAlign:'right', width:'100%', color:'white',margin:'0'}}>سوپر مارکت اکسترا</h1>
-                            <span style={{fontSize:'60px', textAlign:'right', width:'100%', color:'white', marginTop:'20px', marginBottom:'30px'}}>سفارش با موبایل</span>
-                            <span style={{fontSize:'15px', textAlign:'right', width:'100%', color:'white'}}>سوپرمارکت شکلی از خواربارفروشی ولی بزرگتر از آن است که مشتری خودش محصولات را از قفسه برمی‌دارد.</span>
+                        <div className={Styles.box5Text} style={{display:'flex', flexDirection:'column', alignItems:'flex-start', justifyContent:'center', width:'49%', height:'550px'}}>
+                            <h1 style={{fontSize:'40px', textAlign:'center', color:'white',margin:'0'}}>سوپر مارکت اکسترا</h1>
+                            <span style={{fontSize:'60px', textAlign:'center', color:'white', marginTop:'20px', marginBottom:'30px'}}>سفارش با موبایل</span>
+                            <span style={{fontSize:'15px', textAlign:'center', color:'white'}}>سوپرمارکت شکلی از خواربارفروشی ولی بزرگتر از آن است که مشتری خودش محصولات را از قفسه برمی‌دارد.</span>
                             <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-around', paddingTop:'30px', width:'70%'}}>
                                 <a>
                                     <img style={{width:'170px', height:'auto'}} src={require('../../assets/img/appStore.png')} alt=""/>
@@ -367,7 +365,7 @@ const Home = (props) => {
                                 </a>
                             </div>
                         </div>
-                        <div style={{width:'40%', height:'fit-content', display:'flex', alignItems:'center'}}>
+                        <div className={Styles.box5Img} style={{width:'40%', height:'fit-content', display:'flex', alignItems:'center'}}>
                             <img style={{width:'100%'}} src={require('../../assets/img/mobile.png')} alt=""/>
                         </div>
                     </div>
@@ -380,7 +378,7 @@ const Home = (props) => {
                             </div>
                             <div></div>
                         </div>
-                        <div style={{width:'100%', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-between'}}>
+                        <div className={Styles.box6Items} style={{width:'100%', display:'flex', flexDirection:'row', alignItems:'flex-start', justifyContent:'space-between'}}>
                             <div className={Styles.box6Item}>
                                 <a className={Styles.button6}>
                                     <span style={{fontSize:"13px", color:"white"}}>بروزرسانی ها</span>
@@ -390,7 +388,9 @@ const Home = (props) => {
                                     <span style={{width:'120px', fontSize:'15px', color:'#01e281', textAlign:'center', backgroundColor:'white', zIndex:'1'}}>۲۱ فروردین ۱۴۰۲</span>
                                     <span style={{width:'100%', fontSize:'15px', color:'#49607e', textAlign:'right', paddingTop:'20px' , marginTop:'-12px', borderTop:'rgba(128, 128, 128, 0.2) solid 1px'}}>میوه و صیفی جات در سوپر مارکت</span>
                                 </div>
-                                <FontAwesomeIcon className={Styles.box6ItemLink} icon={faLink} />
+                                <div className={Styles.box6ItemLink}>
+                                <FontAwesomeIcon  icon={faLink} />
+                                </div>
                             </div>
                             <div className={Styles.box6Item}>
                                 <a className={Styles.button6}>
@@ -427,10 +427,12 @@ const Home = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className={Styles.space}></div>
+                    <div className={Styles.space6}></div>
                 </div>
             </div>
             <Footer/>
+            <AppBar />
+
         </div>
     );
 };
