@@ -11,6 +11,7 @@ import {
     faPhoneVolume, faTag,
     faUser, faXmark
 } from '@fortawesome/free-solid-svg-icons';
+import {NavLink, Outlet} from 'react-router-dom';
 
 const SiteHeader = () => {
 
@@ -55,10 +56,10 @@ const SiteHeader = () => {
                             <div className={Styles.menubarWrapper}>
                                 <ul className={Styles.menubar}>
                                     <li className={Styles.menuLi}>
-                                        <a className={Styles.menuItems}>
+                                        <NavLink to='/products' className={Styles.menuItems}>
                                             <FontAwesomeIcon className={Styles.menuItem} style={{color:"white", fontSize:"21px", marginLeft:"6px"}} icon={faBasketShopping} />
                                             <span className={Styles.menuItem} style={{fontSize:"18px", color:"white"}}>محصولات جدید</span>
-                                        </a>
+                                        </NavLink>
                                     </li>
                                     <li className={Styles.menuLi} style={{borderTop: '1px solid gray'}}>
                                         <a className={Styles.menuItems}>
@@ -406,6 +407,7 @@ const SiteHeader = () => {
                     </div>
                 </nav>
             </div>
+            <Outlet/>
         </div>
     );
 };

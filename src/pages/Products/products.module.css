@@ -1,0 +1,29 @@
+.container {
+    width: 92vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.box1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box2Column1 {
+    width: 67%;
+}
+.box2Column2 {
+    width: 29%;
+}

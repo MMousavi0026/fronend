@@ -12,7 +12,7 @@ const AppBar = () => {
                     <FontAwesomeIcon className={Styles.icon} icon={faHouse} />
                     <span className={Styles.text}>خانه</span>
                 </NavLink>
-                <NavLink to="#" className={Styles.item}>
+                <NavLink to="/products" className={Styles.item}>
                     <FontAwesomeIcon className={Styles.icon} className={Styles.icon} icon={faBasketShopping} />
                     <span className={Styles.text}>محصولات</span>
                 </NavLink>

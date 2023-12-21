@@ -9,13 +9,14 @@
     background-image: url('https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/04/bg-subscribe.jpg');
     background-color: #1c3e56;
     width: 92%;
-    height: 200px;
+    height: fit-content;
+    padding: 15px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     border-radius: 40px;
-    margin-bottom: -80px;
+    margin-bottom: -55px;
     z-index: 1;
     flex-wrap: wrap;
 }
@@ -24,7 +25,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     position: relative;
+    flex-wrap: wrap;
+    margin: 5px;
 }
 
 .button1 {
@@ -164,9 +168,17 @@
     flex-wrap: wrap;
 }
 
+.space {
+    display: none;
+}
+
+.floatBoxItem {
+    margin: 15px;
+}
+
 @media (max-width: 1024px) {
     .floatBox >div > span {
-        font-size: 3.5vw!important;
+        font-size: 40px!important;
     }
 }
 
@@ -197,13 +209,28 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .floatBox {
         justify-content: center!important;
     }
 
+    .floatBox >div > span {
+        font-size: 27px!important;
+    }
+
     .inputWrapper > input {
         width: 60vw!important;
-        flex-wrap: wrap;
+    }
+
+    .space {
+        display: flex;
+    }
+}
+
+@media (max-width: 425px) {
+    .button1 {
+        position: static;
+        margin-top: 10px;
     }
 }

@@ -28,6 +28,7 @@
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.4s, color 0.4s;
+    margin-bottom: 20px;
 }
 
 .button2 {
@@ -41,6 +42,7 @@
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.4s, border 0.4s;
+    margin-bottom: 20px;
 }
 
 .button1:hover {
@@ -134,7 +136,7 @@
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.4s;
-    margin: 30px 0;
+    margin: 30px 55px;
 }
 
 .button7:hover {
@@ -239,7 +241,7 @@
 
 .box4Item {
     width: 22%;
-    height: 350px;
+    height: 370px;
     box-shadow: 0 15px 60px 0 rgba(18,45.00000000000004,64,.15);
     border-radius: 15px;
     display: flex;
@@ -257,7 +259,7 @@
 .box4ItemOption {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     position: absolute;
     top: 5px;
     left: 15px;
@@ -270,16 +272,17 @@
 }
 
 .love {
-    width: 100%;
+    width: fit-content;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: end;
+    margin-top: 10px;
 }
 
-.love:hover .box4ItemOptionTitle {
-    display: flex;
-}
+/*.love:hover .box4ItemOptionTitle {*/
+/*    display: flex;*/
+/*}*/
 
 .icon {
     font-size: 15px;
@@ -287,7 +290,6 @@
     border: #122d40 solid 1px;
     border-radius: 100%;
     padding: 10px;
-    margin-top: 10px;
     transition: color .3s, border .3s;
 }
 
@@ -303,7 +305,7 @@
     font-size: 12px;
     padding: 3.5px 10px;
     height: 22px;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 8px;
@@ -407,7 +409,8 @@
 
 .box2Column1Item1 {
     background-size: contain!important;
-    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/05/bg-2.png), linear-gradient(90deg, #ff3f55, #ff3f55), no-repeat, left bottom;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/05/bg-2.png), linear-gradient(90deg, #ff3f55, #ff3f55), left bottom;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -418,7 +421,9 @@
 
 .box2Column1Item2 {
     background-size: contain!important;
-    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-1.png), linear-gradient(90deg, #f4f9f5, #f4f9f5) no-repeat right bottom;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-1.png), linear-gradient(90deg, #f4f9f5, #f4f9f5);
+    background-repeat: no-repeat;
+    background-position: right bottom;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -429,7 +434,9 @@
 
 .box2Column1Item3 {
     background-size: contain!important;
-    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-3.png), linear-gradient(90deg, #122d40, #122d40) no-repeat left bottom;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-3.png), linear-gradient(90deg, #122d40, #122d40);
+    background-repeat: no-repeat;
+    background-position: left bottom;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -440,7 +447,13 @@
 
 .box2Column2 {
     background-size: contain!important;
-    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/04/bg-4.png), linear-gradient(90deg, #01e281, #01e281), no-repeat, right bottom;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/04/bg-4.png), linear-gradient(90deg, #01e281, #01e281);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.space6 {
+    height: 120px;
 }
 
 @media (max-width: 1024px) {
@@ -470,6 +483,10 @@
 
     .box1Item1Buttons {
         width: 50% !important;
+    }
+    .box1Item1, .box1Item1 > span {
+        align-items: center!important;
+        text-align: center!important;
     }
 
     .box2 {
@@ -509,12 +526,31 @@
 }
 
 @media (max-width: 768px) {
-    .box1Item1, .box1Item1 > span {
-        align-items: center!important;
-        text-align: center!important;
-    }
     .box1Item1Buttons {
         width: 70% !important;
+        flex-wrap: wrap;
+    }
+
+    .box2Column1 {
+        height: 867px;
+    }
+
+    .box2Column1Row1 {
+        flex-direction: column!important;
+        height: 50% !important;
+    }
+
+    .box2Column1Item1 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .box2Column1Item2 {
+        width: 100%;
+    }
+
+    .box2Column1Item3 {
+        height: 46% !important;
     }
 
     .box4Title {
@@ -544,5 +580,100 @@
     .box6Item {
         width: 46%;
         margin-bottom: 50px;
+    }
+
+    .box1Item1Title {
+        font-size: 8.5vw!important;
+    }
+    .box1Item1Text {
+        font-size: 2.3vw!important;
+    }
+
+    .floatBox {
+        width: 85%;
+        height: 540px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 40px;
+    }
+    .floatBoxItem {
+        flex: 0 0 95%;
+    }
+
+    .box6Title {
+        justify-content: center!important;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 520px) {
+    .box5Button {
+        flex-direction: column!important;
+    }
+
+    .box3Title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offItemA {
+        width: 100%;
+    }
+
+    .box5TextH1 {
+        font-size: 25px!important;
+    }
+
+    .box5Text1 {
+        font-size: 37px!important;
+    }
+}
+
+@media (max-width: 425px) {
+    .box1Item1H1 {
+        font-size: 6vw!important;
+    }
+    .box1Item1Title {
+        font-size: 9.5vw!important;
+    }
+    .box1Item1Text {
+        font-size: 4.3vw!important;
+    }
+
+    .box4TitleText {
+        flex-direction: column!important;
+    }
+
+    .box4Item {
+        width: 100%;
+    }
+
+    .box6Items {
+        justify-content: center!important;
+    }
+
+    .box6Item {
+        width: 95%;
+    }
+
+    .box2Column1Item2Text1 {
+        margin-top: 20px!important;
+        margin-left: 20px!important;
+    }
+    .box2Column1Item2Text2 {
+        margin-left: 20px!important;
+    }
+
+    .box2Column1Item3Text1 {
+        margin-right: 20px!important;
+        margin-top: 20px!important;
+        font-size: 25px!important;
+    }
+    .box2Column1Item3Text2 {
+        text-align: right!important;
+        margin-right: 20px!important;
+        font-size: 33px!important;
     }
 }

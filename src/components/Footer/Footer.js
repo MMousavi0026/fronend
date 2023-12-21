@@ -10,9 +10,9 @@ const Footer = () => {
             <div className={Styles.footerWrapper}>
                 <div className={Styles.floatBox}>
                     <div className={Styles.floatBoxItem}>
-                        <span style={{fontSize:'3vw', color:'white'}}>در</span>
-                        <span style={{fontSize:'3vw', color:'#01e281'}}> خبرنامه ویژه </span>
-                        <span style={{fontSize:'3vw', color:'white'}}>ما عضو شوید</span>
+                        <span style={{fontSize:'40px', color:'white'}}>در</span>
+                        <span style={{fontSize:'40px', color:'#01e281'}}> خبرنامه ویژه </span>
+                        <span style={{fontSize:'40px', color:'white'}}>ما عضو شوید</span>
                     </div>
                     <div className={Styles.inputWrapper}>
                         <input style={{borderRadius:'50px', paddingRight:'20px', width:'40vw', height:'60px', border:'none'}} type={"text"} placeholder={"ایمیل خود را وارد کنید"}/>
@@ -88,7 +88,7 @@ const Footer = () => {
                         <span className={Styles.box1Row2Item} style={{fontSize:'14px', color:'rgb(159,159,159)', margin:'20px 30px'}}>© کپی رایت ۲۰۲۳ طراحی توسط ماهان موسوی</span>
                         <img className={Styles.box1Row2Item} style={{width:'270px', margin:'20px 30px'}} src={require('../../assets/img/f1.png')} alt=""/>
                     </div>
-                    <div style={{height:'80px'}}></div>
+                    <div className={Styles.space} style={{height:'80px'}}></div>
                 </div>
             </div>
         </div>
