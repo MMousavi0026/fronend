@@ -1,18 +1,17 @@
 import React from 'react';
-import Styles from './products.module.css'
 import SiteHeader from "../../components/SiteHeader/SiteHeader";
 import AppBar from "../../components/AppBar/AppBar";
 import {Breadcrumbs} from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Link from "@mui/material/Link";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHouse} from "@fortawesome/free-solid-svg-icons";
 import Typography from "@mui/material/Typography";
+import HomeIcon from "@mui/icons-material/Home";
+import Styles from './products.module.css'
 
 const Products = () => {
     const breadcrumbs = [
         <Link style={{display: 'flex'}} underline="hover" key="1" color="inherit" href="/">
-            <FontAwesomeIcon style={{fontSize:'18px'}} icon={faHouse} />
+            <HomeIcon style={{fontSize:'18px'}}/>
         </Link>,
         <Typography fontSize={"18px"} key="2" color="text.primary">
             محصولات

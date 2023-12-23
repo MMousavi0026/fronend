@@ -76,53 +76,28 @@
     padding: 0 20px;
 }
 
-.floatBoxItem {
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.floatBoxItemImg {
-    background-color: #ccffea;
-    border-radius: 100%;
-    padding: 10px;
-    margin-left: 15px;
-}
-
 .space {
     width: 100%;
     height: 120px;
 }
 
 .box2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: fit-content;
+    margin: 0!important;
 }
 
 .box2Column1 {
-    width: 68%;
     height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0!important;
 }
 
 .box2Column2 {
-    width: 30%;
-    height: 600px;
     background-color: #01e281;
     border-radius: 25px;
-    position: relative;
-}
-
-.box2Column2 img {
-    float:"bottom"
+    height: 600px;
+    background-size: contain!important;
+    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/04/bg-4.png), linear-gradient(90deg, #01e281, #01e281);
+    background-position: right bottom;
+    background-repeat: no-repeat;
 }
 
 .button7, .button4{
@@ -188,34 +163,18 @@
     height: fit-content;
 }
 
-.fish {
-    min-width: 70px;
-    width: 5.5vw;
-}
 
-.offItemsA {
+.box3Items {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.offItemA {
-    width: 14vw;
-    border: #e6e6e6 solid 1px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 7vh 0;
-    transition: border-color .4s, box-shadow .4s;
-    cursor: pointer;
-}
 
-.offItemA:hover {
-    border-color: #01e281;
-    box-shadow: 0 15px 60px 0 rgba(18,45.00000000000004,64,.15) ;
-}
+
+
 
 .button4:hover {
     background-color: #122d40;
@@ -296,19 +255,6 @@
 .icon:hover {
     border: #01e281 solid 1px;
     color: #01e281;
-}
-
-.box4ItemOptionTitle {
-    background-color: #01e281;
-    color: white;
-    border-radius: 50px;
-    font-size: 12px;
-    padding: 3.5px 10px;
-    height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 8px;
 }
 
 .box4Item:hover .button5 {
@@ -411,12 +357,8 @@
     background-size: contain!important;
     background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/05/bg-2.png), linear-gradient(90deg, #ff3f55, #ff3f55), left bottom;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width:48.6%;
-    height:100%;
     border-radius:20px;
+    height: 50%;
 }
 
 .box2Column1Item2 {
@@ -424,12 +366,8 @@
     background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-1.png), linear-gradient(90deg, #f4f9f5, #f4f9f5);
     background-repeat: no-repeat;
     background-position: right bottom;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width:48.6%;
-    height:100%;
     border-radius:20px;
+    height: 50%;
 }
 
 .box2Column1Item3 {
@@ -437,19 +375,12 @@
     background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/06/bg-3.png), linear-gradient(90deg, #122d40, #122d40);
     background-repeat: no-repeat;
     background-position: left bottom;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    height: 52%;
     border-radius: 20px;
+    height: 50%;
 }
 
 .box2Column2 {
-    background-size: contain!important;
-    background: url(https://xtratheme.ir/elementor/supermarket/wp-content/uploads/sites/111/2023/04/bg-4.png), linear-gradient(90deg, #01e281, #01e281);
-    background-position: right bottom;
-    background-repeat: no-repeat;
+
 }
 
 .space6 {
@@ -489,27 +420,6 @@
         text-align: center!important;
     }
 
-    .box2 {
-        flex-wrap: wrap;
-    }
-
-    .box2 > div {
-        width: 100% !important;
-    }
-
-    .box2Column2 {
-        margin-top: 22px;
-    }
-
-    .offItemsA {
-        flex-wrap: wrap;
-    }
-
-    .offItemA {
-        width: 31.5%;
-        margin-bottom: 22px;
-    }
-
     .box5 {
         flex-wrap: wrap;
         align-items: space-evenly;
@@ -542,11 +452,6 @@
 
     .box2Column1Item1 {
         margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .box2Column1Item2 {
-        width: 100%;
     }
 
     .box2Column1Item3 {
@@ -616,10 +521,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .offItemA {
-        width: 100%;
     }
 
     .box5TextH1 {

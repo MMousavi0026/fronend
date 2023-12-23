@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/global.css'
 import './styles/font.css'
 import {BrowserRouter as Router , Routes ,Route} from "react-router-dom";

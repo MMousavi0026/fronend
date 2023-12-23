@@ -16,7 +16,7 @@
 
 .header11 {
     width: 100%;
-    height: 23vh;
+    height: 21vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,22 +70,27 @@ input:focus {
     cursor: pointer
 }
 
-.icon {
-    font-size: 17px;
-    color: white;
-    padding:12px;
-    border-radius: 100vh;
-    border: 1px #354c5d solid;
+button {
+    padding: 0;
+}
+
+.icons {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+}
+
+.icon {
+    font-size: 23px;
+    color: white;
+    padding:10px;
+    border-radius: 100vh;
+    border: 1px #354c5d solid;
     background-color: #122d40;
     cursor: pointer;
 }
 
 .call {
-    width: 100% ;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,15 +106,15 @@ input:focus {
     margin-left: 1vw;
 }
 
-.call:hover .callIcon {
-    border-color: #01e281;
-    color: #01e281;
-}
-
 .callIcon {
     border-radius: 100vh;
     border: 1px #354c5d solid;
     transition: border-color 0.3s, color 0.3s;
+}
+
+.call:hover .callIcon {
+    border-color: #01e281;
+    color: #01e281;
 }
 
 .barsWrapper {
@@ -127,6 +132,10 @@ input:focus {
 }
 
 @media (max-width: 768px) {
+    .header11 {
+        margin-bottom: 0;
+    }
+
     .searchBox {
         display: none;
     }
@@ -195,6 +204,7 @@ input:focus {
 .dayOff {
     width: 16vw;
     background-color: #01e281;
+    color: #122d40;
     border-radius: 100vw;
     height: 60px;
     display: flex;
@@ -211,23 +221,17 @@ input:focus {
 }
 
 .off {
-    transition: color 0.4s;
-}
-
-.dayOff:hover .off{
-    color: #01e281!important;
-
+    font-size: 2vw;
+    margin-left: 10px;
 }
 
 .navItems {
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: white;
     padding: 10px 10px;
     text-decoration: none;
-}
-
-.navItem {
     transition: color 0.4s;
 }
 
@@ -236,7 +240,7 @@ input:focus {
     right: -20px;
 }
 
-.navItems:hover .navItem{
+.navItems:hover{
     color: #01e281 !important;
 }
 
@@ -326,6 +330,11 @@ div ul li:hover ul {
 .dayOffWrapper {
     position: absolute;
     left: 12px;
+}
+.dayOffWrapper2 {
+    position: absolute;
+    left: 150px;
+    z-index: 1;
 }
 
 .menubarWrapper {
