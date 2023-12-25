@@ -1,36 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
+import MenuButton from "../MenuButton";
 import styles from "./siteHeader.module.css";
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import Popover from "@mui/material/Popover";
 
 const NavItemsOff = () => {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-
-    const handlePopoverOpen = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handlePopoverClose = () => {
-        setAnchorEl(null);
-    };
-
-    const open = Boolean(anchorEl);
+    const [open, setOpen] = useState(false);
 
     return (
         <section>
-            <button className={styles.navItems} aria-owns={open ? 'mouse-over-popover' : undefined} aria-haspopup="true" onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose}>
-                <ShoppingBasketIcon fontSize={'20'} style={{fontSize: "21px", marginLeft: "6px"}}/>
-                <span style={{fontSize: "1.5vw"}}>تخفیفات ویژه</span>
-                <ArrowDropDownIcon style={{fontSize: "35px"}}/>
-            </button>
-            <Popover id="mouse-over-popover" sx={{pointerEvents: 'none'}} open={open} anchorEl={anchorEl} anchorOrigin={{vertical: 'bottom', horizontal: 'left',}} transformOrigin={{vertical: 'top', horizontal: 'left',}} onClose={handlePopoverClose} disableRestoreFocus PaperProps={{sx: {backgroundColor: 'transparent', boxShadow:'none'},}}>
-                <div className={styles.offItems}>
-                    <div className={styles.offItem} style={{textAlign: 'center'}}>
-                        <img className={styles.fish} alt='fish' src="/img/s1.png"/>
-                        <span style={{fontSize: '20px', padding: '17px 0', color: 'white'}}>ماهی<br/> و آبزیان</span>
-                        <span style={{fontSize: '14px', color: '#01e281'}}>۲۰٪ تخفیف</span>
-                    </div>
+            <MenuButton
+                open={open}
+                title="تخفیفات ویژه"
+                onOpen={() => setOpen(true)}
+                onClose={() => setOpen(false)}
+                className={styles.navItems}
+            >
+                <div className={styles.offItemsF+" "+styles.navItems}>
                     <div className={styles.offItem} style={{textAlign: 'center'}}>
                         <img className={styles.fish} alt='fish' src="/img/s2.png"/>
                         <span style={{fontSize: '20px', padding: '17px 0', color: 'white'}}>میوه و<br/>سبزیجات</span>
@@ -52,7 +36,7 @@ const NavItemsOff = () => {
                         <span style={{fontSize: '14px', color: '#01e281'}}>۴۵٪ تخفیف</span>
                     </div>
                 </div>
-            </Popover>
+            </MenuButton>
         </section>
     );
 };

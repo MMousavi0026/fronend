@@ -14,7 +14,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import {NavLink, Outlet} from 'react-router-dom';
 import styles from './siteHeader.module.css'
 import {Button} from "@mui/material";
-import NavItemsOff from "./navItemsOff";
+import NavItemsOff from "./NavItemsOff";
 
 const SiteHeader = () => {
 
