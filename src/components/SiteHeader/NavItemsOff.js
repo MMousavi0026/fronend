@@ -1,42 +1,29 @@
 import React, {useState} from 'react';
-import MenuButton from "../MenuButton";
 import styles from "./siteHeader.module.css";
+import ProductsCategorization from "../productsCategorization/productsCategorization";
+import MenuButtonOff from "./MenuButtonOff";
 
 const NavItemsOff = () => {
     const [open, setOpen] = useState(false);
 
     return (
         <section>
-            <MenuButton
+            <MenuButtonOff
                 open={open}
                 title="تخفیفات ویژه"
                 onOpen={() => setOpen(true)}
                 onClose={() => setOpen(false)}
-                className={styles.navItems}
+                style={{color: 'white', cursor:'pointer', marginLeft:'30px'}}
             >
-                <div className={styles.offItemsF+" "+styles.navItems}>
-                    <div className={styles.offItem} style={{textAlign: 'center'}}>
-                        <img className={styles.fish} alt='fish' src="/img/s2.png"/>
-                        <span style={{fontSize: '20px', padding: '17px 0', color: 'white'}}>میوه و<br/>سبزیجات</span>
-                        <span style={{fontSize: '14px', color: '#01e281'}}>۴۰٪ تخفیف</span>
-                    </div>
-                    <div className={styles.offItem} style={{textAlign: 'center'}}>
-                        <img className={styles.fish} alt='fish' src="/img/s3.png"/>
-                        <span style={{fontSize: '20px', padding: '17px 0', color: 'white'}}>نان و<br/>غلات</span>
-                        <span style={{fontSize: '14px', color: '#01e281'}}>۱۵٪ تخفیف</span>
-                    </div>
-                    <div className={styles.offItem} style={{textAlign: 'center'}}>
-                        <img className={styles.fish} alt='fish' src="/img/s4.png"/>
-                        <span style={{fontSize: '20px', padding: '17px 0', color: 'white'}}>لبنیات و<br/>پروتئین</span>
-                        <span style={{fontSize: '14px', color: '#01e281'}}>۵۰٪ تخفیف</span>
-                    </div>
-                    <div className={styles.offItem} style={{textAlign: 'center'}}>
-                        <img className={styles.fish} alt='fish' src="/img/s5.png"/>
-                        <span style={{fontSize: '20px', padding: '17px 0', color: 'white'}}>گوشت<br/>و مرغ</span>
-                        <span style={{fontSize: '14px', color: '#01e281'}}>۴۵٪ تخفیف</span>
-                    </div>
+                <div className={styles.offItems}>
+                    <ProductsCategorization imgSrc={"/img/s1.png"} title={"ماهی و آبزیان"} titleColor={"white"} className={styles.navItem}>۲۰٪ تخفیف</ProductsCategorization>
+                    <ProductsCategorization imgSrc={"/img/s2.png"} title={"میوه و سبزیجات"} titleColor={"white"}>۲۰٪ تخفیف</ProductsCategorization>
+                    <ProductsCategorization imgSrc={"/img/s3.png"} title={"نان و غلات"} titleColor={"white"}>۲۰٪ تخفیف</ProductsCategorization>
+                    <ProductsCategorization imgSrc={"/img/s4.png"} title={"لبنیات و پروتئین"} titleColor={"white"}>۲۰٪ تخفیف</ProductsCategorization>
+                    <ProductsCategorization imgSrc={"/img/s5.png"} title={"شوینده و نظافتی"} titleColor={"white"}>۲۰٪ تخفیف</ProductsCategorization>
+                    <ProductsCategorization imgSrc={"/img/s6.png"} title={"گوشت و استیک"} titleColor={"white"}>۲۰٪ تخفیف</ProductsCategorization>
                 </div>
-            </MenuButton>
+            </MenuButtonOff>
         </section>
     );
 };

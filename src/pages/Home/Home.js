@@ -93,12 +93,12 @@ const Home = () => {
                             <span style={{fontSize:'40px', color:'#01e281'}}> محصولات ما</span>
                         </div>
                         <div className={styles.box3Items} style={{width:'100%', marginTop:'40px'}}>
-                            <ProductsCategorization imgSrc={"/img/s1.png"} title={"ماهی و آبزیان"}/>
-                            <ProductsCategorization imgSrc={"/img/s2.png"} title={"میوه و سبزیجات"}/>
-                            <ProductsCategorization imgSrc={"/img/s3.png"} title={"نان و غلات"}/>
-                            <ProductsCategorization imgSrc={"/img/s4.png"} title={"لبنیات و پروتئین"}/>
-                            <ProductsCategorization imgSrc={"/img/s5.png"} title={"شوینده و نظافتی"}/>
-                            <ProductsCategorization imgSrc={"/img/s6.png"} title={"گوشت و استیک"}/>
+                            <ProductsCategorization imgSrc={"/img/s1.png"} title={"ماهی و آبزیان"} titleColor={"black"}/>
+                            <ProductsCategorization imgSrc={"/img/s2.png"} title={"میوه و سبزیجات"} titleColor={"black"}/>
+                            <ProductsCategorization imgSrc={"/img/s3.png"} title={"نان و غلات"} titleColor={"black"}/>
+                            <ProductsCategorization imgSrc={"/img/s4.png"} title={"لبنیات و پروتئین"} titleColor={"black"}/>
+                            <ProductsCategorization imgSrc={"/img/s5.png"} title={"شوینده و نظافتی"} titleColor={"black"}/>
+                            <ProductsCategorization imgSrc={"/img/s6.png"} title={"گوشت و استیک"} titleColor={"black"}/>
                         </div>
                     </div>
                     <div className={styles.space}></div>

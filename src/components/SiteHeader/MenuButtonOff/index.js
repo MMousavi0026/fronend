@@ -3,8 +3,9 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import styles from "./MenuButtonOff.module.css";
 
-const MenuButton = (
+const MenuButtonOff = (
     {
         title,
         open,
@@ -44,11 +45,19 @@ const MenuButton = (
                 anchorEl={internalTarget.current}
                 onMouseLeave={handleButtonKeyUp}
                 {...MenuProps}
+                className={styles.offItemsWrapper}
+                hideBackdrop
+                slotProps={{
+                    paper: {
+                        className: styles.offItemsWrapper1
+                    }
+                }}
             >
+
                 {children}
             </Menu>
         </Button>
     );
 }
 
-export default MenuButton;
+export default MenuButtonOff;

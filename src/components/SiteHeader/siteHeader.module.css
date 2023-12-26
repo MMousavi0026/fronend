@@ -230,15 +230,14 @@ button {
     align-items: center;
     cursor: pointer;
     color: white!important;
-    padding: 10px 10px;
     text-decoration: none;
     transition: color 0.4s;
+    margin-left: 40px;
 }
 
-.offItemsF {
-    display: flex;
-    flex-direction: row;
-
+.navItem {
+    background-color: #122d40;
+    color: #122d40;
 }
 
 .navbarWrapper {
@@ -248,6 +247,18 @@ button {
 
 .navItems:hover{
     color: #01e281 !important;
+}
+
+.offItems {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #122d40;
+    border-radius: 10px;
+    padding: 16px 10px;
+    right: 10%;
 }
 
 .navbar {
@@ -277,20 +288,6 @@ div ul li ul {
 
 div ul li:hover ul {
     display: flex!important;
-}
-
-.offItems {
-    width: 83vw;
-    height: 56vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #122d40;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 1;
-    right: 6%;
 }
 
 .offItem {
@@ -443,8 +440,7 @@ a, NavLink {
     height: 49vh;
     background-color: #122d40;
     border-radius: 10px;
-    position: absolute;
-    z-index: 1;
+    padding: 0 10px;
 }
 
 .quickAccessA {
