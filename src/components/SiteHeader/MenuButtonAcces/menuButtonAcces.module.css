@@ -1,16 +1,14 @@
 .offItemsWrapper {
-    height: 60vh;
     display: flex;
-    align-items: center;
-    color: white!important;
-    text-decoration: none;
-    transition: color 0.4s;
-    z-index: 1111;
+    height: 60vh;
+    top: 213px!important;
 }
 
 .offItemsWrapper1 {
     background: transparent!important;
     border-radius: 10px!important;
+    top: 0!important;
+    left: 20px!important;
 }
 
 .offItemsWrapper1 ul {

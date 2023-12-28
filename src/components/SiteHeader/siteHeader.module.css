@@ -251,6 +251,7 @@ button {
 
 .offItems {
     width: 90vw;
+    height: 34vh;
     display: flex;
     flex-direction: row;
     align-items: center;

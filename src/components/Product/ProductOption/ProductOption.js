@@ -21,7 +21,17 @@ const ProductOption = ({iconName, title}) => {
             <button className={Styles.love} aria-owns={open ? 'mouse-over-popover' : undefined} aria-haspopup="true" onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose}>
                 <FontAwesomeIcon className={Styles.icon} icon={iconName} />
             </button>
-            <Popover id="mouse-over-popover" sx={{pointerEvents: 'none'}} open={open} anchorEl={anchorEl} anchorOrigin={{vertical: 'center', horizontal: 'right',}} transformOrigin={{vertical: 'center', horizontal: 'left',}} onClose={handlePopoverClose} disableRestoreFocus PaperProps={{sx: {backgroundColor: 'transparent', boxShadow:'none'},}}>
+            <Popover
+                id="mouse-over-popover"
+                sx={{pointerEvents: 'none'}}
+                open={open}
+                anchorEl={anchorEl}
+                anchorOrigin={{vertical: 'center', horizontal: 'right',}}
+                transformOrigin={{vertical: 'center', horizontal: 'left',}}
+                onClose={handlePopoverClose}
+                disableRestoreFocus
+                slotProps={{paper: { sx: {backgroundColor: 'transparent', boxShadow:'none'}}}}
+            >
                 <span className={Styles.productOptionTitle}>{title}</span>
             </Popover>
         </div>

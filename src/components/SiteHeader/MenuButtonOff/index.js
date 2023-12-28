@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import Menu from "@mui/material/Menu";
+import Popover from "@mui/material/Popover";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import styles from "./MenuButtonOff.module.css";
@@ -35,18 +35,28 @@ const MenuButtonOff = (
     return (
         <Button
             onMouseEnter={handleButtonKeyDown}
+            onMouseLeave={handleButtonKeyUp}
             {...props}
+            style={{cursor:'pointer', color:'white', marginLeft:'25px', zIndex: 1500}}
         >
             <ShoppingBasketIcon style={{fontSize: 21, marginLeft: "6px"}}/>
             <span style={{fontSize: "1.5vw"}}>{title}</span>
             <ArrowDropDownIcon style={{fontSize: 35}}/>
-            <Menu
+            <Popover
                 open={open}
                 anchorEl={internalTarget.current}
+                anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'left',
+                }}
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'left',
+                }}
                 onMouseLeave={handleButtonKeyUp}
-                {...MenuProps}
                 className={styles.offItemsWrapper}
                 hideBackdrop
+                {...MenuProps}
                 slotProps={{
                     paper: {
                         className: styles.offItemsWrapper1
@@ -55,7 +65,7 @@ const MenuButtonOff = (
             >
 
                 {children}
-            </Menu>
+            </Popover>
         </Button>
     );
 }

@@ -13,7 +13,6 @@ const NavItemsOff = () => {
                 title="تخفیفات ویژه"
                 onOpen={() => setOpen(true)}
                 onClose={() => setOpen(false)}
-                style={{color: 'white', cursor:'pointer', marginLeft:'30px'}}
             >
                 <div className={styles.offItems}>
                     <ProductsCategorization imgSrc={"/img/s1.png"} title={"ماهی و آبزیان"} titleColor={"white"} className={styles.navItem}>۲۰٪ تخفیف</ProductsCategorization>

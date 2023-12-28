@@ -15,7 +15,6 @@ const NavItemsAcces = () => {
                 title="دسترسی سریع"
                 onOpen={() => setOpen(true)}
                 onClose={() => setOpen(false)}
-                style={{color: 'white', cursor: 'pointer', marginLeft:'30px'}}
             >
                 <div className={styles.quickAccess}>
                     <div className={styles.quickAccessColumn}>

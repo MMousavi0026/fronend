@@ -15,6 +15,8 @@ import {NavLink, Outlet} from 'react-router-dom';
 import styles from './siteHeader.module.css'
 import NavItemsOff from "./NavItemsOff";
 import NavItemsAcces from "./NavItemsAcces";
+import {setCartCount} from "../../redux/slices/cartData";
+import {useSelector} from "react-redux";
 
 const SiteHeader = () => {
 
@@ -23,6 +25,8 @@ const SiteHeader = () => {
     const [isShownMenuDastrestiItems1, setShownMenuDastrestiItems1] = useState(false);
     const [isShownMenuDastrestiItems2, setShownMenuDastrestiItems2] = useState(false);
     const [isShownMenuDastrestiItems3, setShownMenuDastrestiItems3] = useState(false);
+
+    const cart = useSelector(x => x.cartData);
 
     return (
         <div className={styles.headerWrapper}>
@@ -45,6 +49,7 @@ const SiteHeader = () => {
                         </button>
                         <button className={styles.store}>
                             <ShoppingBasketIcon fontSize={'20'} className={styles.icon} />
+                            <span>{cart}</span>
                         </button>
                         <button className={styles.love}>
                             <FavoriteIcon fontSize={'20'} className={styles.icon} />

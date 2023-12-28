@@ -36,6 +36,7 @@ const MenuButtonAcces = (
         <Button
             onMouseEnter={handleButtonKeyDown}
             {...props}
+            style={{cursor:'pointer', color:'white', marginLeft:'25px', zIndex: 1500}}
         >
             <span style={{fontSize: "1.5vw"}}>{title}</span>
             <ArrowDropDownIcon style={{fontSize: 35}}/>
